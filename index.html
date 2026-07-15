@@ -27,63 +27,90 @@
     <meta name="twitter:description" content="12 real testers. 14 days. Published. Starting at $49.">
     <meta name="twitter:image" content="https://12testershub.com/og-image.jpg">
 
-    <!-- ── STRUCTURED DATA (SEO Schema) ── -->
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "12 Testers Hub",
-        "url": "https://12testershub.com",
-        "logo": "https://12testershub.com/og-image.jpg",
-        "sameAs": [
-          "https://wa.me/923392211021"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Google Play 12 Testers for 14 Days",
-        "description": "We provide exactly 12 real Android testers who opt-in to your closed testing track and stay active for 14 days — fulfilling Google Play's requirement for production access.",
-        "provider": { "@type": "Organization", "name": "12 Testers Hub", "url": "https://12testershub.com" },
-        "serviceType": "Android App Testing Service",
-        "areaServed": "Worldwide",
-        "offers": { 
-          "@type": "Offer", 
-          "priceCurrency": "USD", 
-          "price": "49", 
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 19, "maxPrice": 49 } 
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "218"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          { "@type": "Question", "name": "What is the 12 testers for 14 days Google Play requirement?", "acceptedAnswer": { "@type": "Answer", "text": "Google Play requires a minimum of 12 active testers on a Closed Testing track for 14 consecutive days before you can publish to production." } },
-          { "@type": "Question", "name": "Can I use my own accounts as testers?", "acceptedAnswer": { "@type": "Answer", "text": "No. Google requires real, unique accounts. Duplicate accounts violate policy and risk account suspension." } },
-          { "@type": "Question", "name": "How fast can you provide 12 testers?", "acceptedAnswer": { "@type": "Answer", "text": "Testers are joined and active within 12–24 hours after you provide the opt-in link." } },
-          { "@type": "Question", "name": "Is this Google policy compliant?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We use real unique Android devices and genuine Google accounts, mimicking organic behavior. 100% safe." } },
-          { "@type": "Question", "name": "What if my app does not pass after 14 days?", "acceptedAnswer": { "@type": "Answer", "text": "We offer a re-run guarantee. If our testers fail to stay for 14 days due to our fault, we redo it free of charge." } }
-        ]
-      },
-      { 
-        "@context": "https://schema.org", 
-        "@type": "WebSite", 
-        "name": "12 Testers Hub", 
-        "url": "https://12testershub.com",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://12testershub.com/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+   <!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Google Play Closed Testing Service",
+  "alternateName": "12TestersHub",
+  "description": "12 real Android testers for 14 days. Google Play production access guaranteed. 100% policy compliant. Starting at $49.",
+  "url": "https://12testershub.com",
+  "serviceType": "Android App Beta Testing",
+  "areaServed": [
+    {"@type": "Country","name": "United States"},
+    {"@type": "Country","name": "United Kingdom"},
+    {"@type": "Continent","name": "Europe"}
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "12TestersHub",
+    "url": "https://12testershub.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "49",
+    "priceCurrency": "USD",
+    "description": "12 real Android testers for 14 days, guaranteed retention"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "218",
+    "bestRating": "5"
+  }
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many testers do I need for Google Play production access?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Play requires minimum 12 real testers who stay opted-in for 14 continuous days. 12TestersHub provides exactly 12 verified real Android users guaranteed to stay the full 14 days."
       }
-    ]
-    </script>
+    },
+    {
+      "@type": "Question",
+      "name": "Are the testers real humans or bots?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "100% real human beings on personal Android devices with distinct IPs and genuine Google accounts. No emulators, no bots — using fake accounts risks a permanent developer account ban."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast do testers join my closed testing track?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "12 testers join within 12-24 hours of your order. Your 14-day countdown starts immediately. Most apps go live on day 15 or 16."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a tester drops before 14 days?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We monitor every tester daily. If anyone uninstalls early, we replace them instantly at no extra cost. 14-day retention is guaranteed — or your money back."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is 12TestersHub compliant with Google Play policies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, 100%. Real devices, distinct IPs, genuine Google accounts, no automation. Your developer account stays safe. We have helped 2,400+ apps publish successfully."
+      }
+    }
+  ]
+}
+</script>
 
     <!-- ── PERFORMANCE HINTS ── -->
     <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
