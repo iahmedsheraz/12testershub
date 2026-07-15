@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | 12 Testers for 14 days Hub</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: {
+                        brand: { DEFAULT: '#d4ff00', dark: '#bfe600', light: '#f9ffe5' },
+                        dark: '#0a0a0a',
+                        darker: '#050505',
+                        card: '#111827'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #fafafa; }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+        }
+        .blob { position: absolute; filter: blur(100px); z-index: 0; opacity: 0.15; pointer-events: none; }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .success-circle {
+            box-shadow: 0 0 0 10px rgba(212, 255, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(212, 255, 0, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(212, 255, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 255, 0, 0); }
+        }
+    </style>
+</head>
+<body class="text-slate-800 font-sans antialiased min-h-screen flex flex-col relative overflow-x-hidden">
+    
+    <div class="absolute inset-0 bg-grid z-0 pointer-events-none"></div>
+    <div class="blob bg-brand w-[500px] h-[500px] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+
+    <header class="w-full relative z-20 bg-white/50 backdrop-blur-md border-b border-slate-200/50">
+        <div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 font-black text-2xl tracking-tight text-dark">
+                <svg class="w-8 h-8 text-dark" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414C17.523 15.3414 16.0353 15.3414 15.3888 15.3414C14.7423 15.3414 14.3315 14.8875 14.3315 14.2409V9.1246C14.3315 8.47806 14.7423 8.0242 15.3888 8.0242C16.0353 8.0242 17.523 8.0242 17.523 8.0242C17.523 8.0242 17.523 7.02293 17.523 5.48514C17.523 3.94735 16.3263 2.75058 14.7885 2.75058H9.2115C7.67371 2.75058 6.47694 3.94735 6.47694 5.48514C6.47694 7.02293 6.47694 15.4222 6.47694 15.4222C6.47694 16.96 7.67371 18.1568 9.2115 18.1568H14.7885C16.3263 18.1568 17.523 16.96 17.523 15.4222V15.3414Z"/><path d="M21.0827 15.3414C21.0827 15.3414 19.595 15.3414 18.9484 15.3414C18.3019 15.3414 17.8911 14.8875 17.8911 14.2409V9.1246C17.8911 8.47806 18.3019 8.0242 18.9484 8.0242C19.595 8.0242 21.0827 8.0242 21.0827 8.0242C21.0827 8.0242 21.0827 7.02293 21.0827 5.48514C21.0827 3.94735 22.2795 2.75058 23.8173 2.75058H29.3942C30.932 2.75058 32.1288 3.94735 32.1288 5.48514C32.1288 7.02293 32.1288 15.4222 32.1288 15.4222C32.1288 16.96 30.932 18.1568 29.3942 18.1568H23.8173C22.2795 18.1568 21.0827 16.96 21.0827 15.4222V15.3414Z"/></svg>
+                12 Testers Hub
+            </a>
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/923392211021" target="_blank" class="hidden md:flex items-center gap-2 bg-[#25D366]/10 text-[#25D366] px-4 py-2 rounded-full text-sm font-bold hover:bg-[#25D366]/20 transition-colors">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.171l-2.855-1.077-1.127 2.894-3.111-1.011 1.096-2.91-2.918-1.083.993-3.076-2.885-1.144 1.139-2.871-3.08-1.026 2.923-1.098L1.131 5.9l2.889 1.123 1.134-2.867L8.271 5.21l1.107-2.935 3.097 1.018 1.15-2.846 2.909 1.124 1.128-2.88 3.125.998-1.104 2.934 2.893 1.101-1.024 3.064 2.895 1.141-1.129 2.872 3.102 1.025-2.924 1.114 1.075 2.887-2.892-1.126-1.129 2.863-3.116-1.054-1.108 2.932-3.122-1.011-1.136 2.868zm1.066-14.978c-3.178 0-5.756 2.583-5.756 5.768 0 1.013.266 1.964.733 2.784l-.946 2.841 2.905-.934a5.727 5.727 0 0 0 3.064.88c3.178 0 5.757-2.583 5.757-5.769s-2.579-5.77-5.757-5.77zm3.17 8.016c-.174.49-1.002.94-1.383 1.01-.358.065-.824.162-2.316-.458-1.787-.743-2.926-2.569-3.013-2.686-.087-.116-.72-.962-.72-1.834 0-.872.453-1.303.612-1.472.158-.169.345-.211.46-.211.115 0 .23 0 .332.005.105.006.246-.04.377.276.134.321.46 1.128.503 1.215.043.087.072.19.015.306-.058.116-.087.19-.174.291-.086.101-.184.218-.261.305-.086.086-.178.182-.08.351.099.169.442.733.953 1.19.661.593 1.213.784 1.386.871.173.086.275.072.378-.044.103-.116.446-.521.564-.7.118-.179.236-.15.395-.091.158.058 1.006.474 1.179.561.173.086.289.13.332.202.043.072.043.421-.131.91z"/></svg>
+                    WhatsApp Support
+                </a>
+                <a href="/" class="text-sm font-bold text-slate-600 hover:text-dark transition-colors border border-slate-200 bg-white px-4 py-2 rounded-full">
+                    Return to Home
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center p-6 relative z-10">
+        
+        <div class="bg-white rounded-[2rem] shadow-2xl shadow-slate-200/50 p-8 md:p-12 max-w-lg w-full text-center border border-slate-100 fade-in-up relative">
+            
+            <div class="w-20 h-20 bg-dark text-brand rounded-full flex items-center justify-center mx-auto mb-6 success-circle z-20 relative">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+
+            <div class="inline-block bg-brand/20 text-dark border border-brand font-bold px-3 py-1 rounded-full text-[10px] uppercase tracking-widest mb-4">
+                🚀 Request Received
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-extrabold text-dark mb-4 tracking-tight">Your App is in<br>Good Hands!</h1>
+            <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-8">
+                We've successfully received your details. Our team is generating your secure checkout session right now.
+            </p>
+
+            <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 text-left mb-8">
+                <h2 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-5">Timeline & Next Steps</h2>
+                
+                <div class="space-y-6">
+                    <div class="flex gap-4 relative">
+                        <div class="absolute left-[15px] top-[30px] bottom-[-20px] w-[2px] bg-slate-200"></div>
+                        <div class="w-8 h-8 rounded-full bg-brand text-dark flex items-center justify-center font-bold text-sm shrink-0 shadow-md relative z-10">1</div>
+                        <div>
+                            <h3 class="font-bold text-dark text-sm">Invoice Delivery</h3>
+                            <p class="text-xs text-slate-500 mt-1">Expect an email containing your secure payment link within the next 30-60 minutes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4 relative">
+                        <div class="absolute left-[15px] top-[30px] bottom-[-20px] w-[2px] bg-slate-200"></div>
+                        <div class="w-8 h-8 rounded-full bg-white border-2 border-slate-200 text-slate-400 flex items-center justify-center font-bold text-sm shrink-0 relative z-10">2</div>
+                        <div>
+                            <h3 class="font-bold text-dark text-sm">Testers Deployed</h3>
+                            <p class="text-xs text-slate-500 mt-1">Once paid, our 12 Android devices will opt-in and install your app within 24 to 48 hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 relative">
+                        <div class="w-8 h-8 rounded-full bg-white border-2 border-slate-200 text-slate-400 flex items-center justify-center font-bold text-sm shrink-0 relative z-10">3</div>
+                        <div>
+                            <h3 class="font-bold text-dark text-sm">14-Day Lock</h3>
+                            <p class="text-xs text-slate-500 mt-1">We maintain strict retention for the full period, ensuring you clear Google's requirement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://wa.me/923392211021" target="_blank" class="block w-full bg-[#25D366] text-white text-lg font-bold py-4 rounded-xl hover:bg-[#1fae51] transition-colors shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.171l-2.855-1.077-1.127 2.894-3.111-1.011 1.096-2.91-2.918-1.083.993-3.076-2.885-1.144 1.139-2.871-3.08-1.026 2.923-1.098L1.131 5.9l2.889 1.123 1.134-2.867L8.271 5.21l1.107-2.935 3.097 1.018 1.15-2.846 2.909 1.124 1.128-2.88 3.125.998-1.104 2.934 2.893 1.101-1.024 3.064 2.895 1.141-1.129 2.872 3.102 1.025-2.924 1.114 1.075 2.887-2.892-1.126-1.129 2.863-3.116-1.054-1.108 2.932-3.122-1.011-1.136 2.868zm1.066-14.978c-3.178 0-5.756 2.583-5.756 5.768 0 1.013.266 1.964.733 2.784l-.946 2.841 2.905-.934a5.727 5.727 0 0 0 3.064.88c3.178 0 5.757-2.583 5.757-5.769s-2.579-5.77-5.757-5.77zm3.17 8.016c-.174.49-1.002.94-1.383 1.01-.358.065-.824.162-2.316-.458-1.787-.743-2.926-2.569-3.013-2.686-.087-.116-.72-.962-.72-1.834 0-.872.453-1.303.612-1.472.158-.169.345-.211.46-.211.115 0 .23 0 .332.005.105.006.246-.04.377.276.134.321.46 1.128.503 1.215.043.087.072.19.015.306-.058.116-.087.19-.174.291-.086.101-.184.218-.261.305-.086.086-.178.182-.08.351.099.169.442.733.953 1.19.661.593 1.213.784 1.386.871.173.086.275.072.378-.044.103-.116.446-.521.564-.7.118-.179.236-.15.395-.091.158.058 1.006.474 1.179.561.173.086.289.13.332.202.043.072.043.421-.131.91z"/></svg>
+                Fast-Track via WhatsApp
+            </a>
+            <p class="text-[11px] text-slate-400 mt-4">Want to speed up the process? Message us your email address directly.</p>
+
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var duration = 3 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 50 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+
+                var particleCount = 50 * (timeLeft / duration);
+                
+                // Fire from multiple origins for the "everywhere" effect
+                confetti(Object.assign({}, defaults, { 
+                    particleCount, 
+                    origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+                    colors: ['#d4ff00', '#0a0a0a', '#25D366', '#f8f9fa']
+                }));
+                confetti(Object.assign({}, defaults, { 
+                    particleCount, 
+                    origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+                    colors: ['#d4ff00', '#0a0a0a', '#25D366', '#f8f9fa']
+                }));
+            }, 250);
+        });
+    </script>
+</body>
+</html>
