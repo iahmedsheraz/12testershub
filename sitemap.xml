@@ -131,5 +131,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+    <url>
+    <loc>https://12testershub.com/blog/why-google-play-14-day-testing-clock-keeps-resetting/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://12testershub.com/blog/google-play-rejected-app-insufficient-engagement/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://12testershub.com/blog/solo-dev-12-testers-google-play-without-begging/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
 </urlset>
