@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-theme="dark">
+<html lang="en" class="scroll-smooth" data-theme="light">
 <head>
     <!-- ── META & SEO ── -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12 Testers Hub | #1 Google Play Closed Testing Service — Launch Faster</title>
     <meta name="description" content="Get 12 real Android testers for 14 days — the only service that guarantees Google Play production access. Starting at $49. Safe, fast, 100% policy compliant.">
+    <meta name="keywords" content="google play closed testing, 12 testers 14 days, android app testing service, google play production access, app testers for hire, real android testers">
+    <meta name="author" content="12 Testers Hub">
     <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="theme-color" content="#c8ff00">
     <link rel="canonical" href="https://12testershub.com/">
+
+    <!-- ── FAVICON ── -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23c8ff00'/%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z' fill='%23080c10'/%3E%3C/svg%3E">
 
     <!-- ── OG / SOCIAL ── -->
     <meta property="og:title" content="12 Testers Hub | #1 Google Play Closed Testing Service">
@@ -20,9 +27,19 @@
     <meta name="twitter:description" content="12 real testers. 14 days. Published. Starting at $49.">
     <meta name="twitter:image" content="https://12testershub.com/og-image.jpg">
 
-    <!-- ── STRUCTURED DATA ── -->
+    <!-- ── STRUCTURED DATA (SEO Schema) ── -->
     <script type="application/ld+json">
     [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "12 Testers Hub",
+        "url": "https://12testershub.com",
+        "logo": "https://12testershub.com/og-image.jpg",
+        "sameAs": [
+          "https://wa.me/923392211021"
+        ]
+      },
       {
         "@context": "https://schema.org",
         "@type": "Service",
@@ -30,7 +47,18 @@
         "description": "We provide exactly 12 real Android testers who opt-in to your closed testing track and stay active for 14 days — fulfilling Google Play's requirement for production access.",
         "provider": { "@type": "Organization", "name": "12 Testers Hub", "url": "https://12testershub.com" },
         "serviceType": "Android App Testing Service",
-        "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "49", "priceSpecification": { "minPrice": 19, "maxPrice": 49 } }
+        "areaServed": "Worldwide",
+        "offers": { 
+          "@type": "Offer", 
+          "priceCurrency": "USD", 
+          "price": "49", 
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 19, "maxPrice": 49 } 
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "218"
+        }
       },
       {
         "@context": "https://schema.org",
@@ -43,14 +71,27 @@
           { "@type": "Question", "name": "What if my app does not pass after 14 days?", "acceptedAnswer": { "@type": "Answer", "text": "We offer a re-run guarantee. If our testers fail to stay for 14 days due to our fault, we redo it free of charge." } }
         ]
       },
-      { "@context": "https://schema.org", "@type": "WebSite", "name": "12 Testers Hub", "url": "https://12testershub.com" }
+      { 
+        "@context": "https://schema.org", 
+        "@type": "WebSite", 
+        "name": "12 Testers Hub", 
+        "url": "https://12testershub.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://12testershub.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
     ]
     </script>
 
-    <!-- ── FONTS ── -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ── PERFORMANCE HINTS ── -->
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&display=swap" rel="stylesheet">
+
+    <!-- ── FONTS ── -->
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&display=swap" rel="stylesheet">
 
     <!-- ── TAILWIND ── -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -73,623 +114,87 @@
         }
     </script>
 
-    <!-- ── GLOBAL STYLES ── -->
-    <style>
-        /* ── Root / theme variables ── */
-        :root {
-            --bg: #080c10;
-            --bg2: #10161d;
-            --bg3: #171f2a;
-            --bg4: #1e2836;
-            --fg: #f7f8f4;
-            --fg2: #9faab8;
-            --fg3: #5a6878;
-            --border: rgba(255,255,255,0.07);
-            --lime: #c8ff00;
-            --lime-soft: rgba(200,255,0,0.10);
-            --lime-glow: rgba(200,255,0,0.25);
-            --card: #10161d;
-            --card-border: rgba(255,255,255,0.07);
-            --shadow: rgba(0,0,0,0.5);
-        }
-        [data-theme="light"] {
-            --bg: #f7f8f4;
-            --bg2: #eef0ea;
-            --bg3: #e4e7de;
-            --bg4: #d8dcd2;
-            --fg: #080c10;
-            --fg2: #3a4452;
-            --fg3: #6b7685;
-            --border: rgba(0,0,0,0.08);
-            --lime: #5a8200;
-            --lime-soft: rgba(90,130,0,0.10);
-            --lime-glow: rgba(90,130,0,0.20);
-            --card: #ffffff;
-            --card-border: rgba(0,0,0,0.08);
-            --shadow: rgba(0,0,0,0.1);
-        }
+   <style>
+:root { --bg: #080c10; --bg2: #10161d; --bg3: #171f2a; --bg4: #1e2836; --fg: #f7f8f4; --fg2: #9faab8; --fg3: #5a6878; --border: rgba(255,255,255,0.07); --lime: #c8ff00; --lime-soft: rgba(200,255,0,0.10); --lime-glow: rgba(200,255,0,0.25); --card: #10161d; --card-border: rgba(255,255,255,0.07); --shadow: rgba(0,0,0,0.5); }
+[data-theme="light"] { --bg: #f7f8f4; --bg2: #eef0ea; --bg3: #e4e7de; --bg4: #d8dcd2; --fg: #080c10; --fg2: #3a4452; --fg3: #6b7685; --border: rgba(0,0,0,0.08); --lime: #5a8200; --lime-soft: rgba(90,130,0,0.10); --lime-glow: rgba(90,130,0,0.20); --card: #ffffff; --card-border: rgba(0,0,0,0.08); --shadow: rgba(0,0,0,0.1); }
+*, *::before, *::after { box-sizing: border-box; }
+html { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--fg); overflow-x: hidden; }
+body { background: var(--bg); color: var(--fg); transition: background 0.3s, color 0.3s; }
+.font-display { font-family: 'Aclonica', sans-serif; }
+.grid-bg { background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px); background-size: 48px 48px; }
+.grain::after { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; opacity: 0.35; }
+.glow-blob { position: absolute; border-radius: 50%; background: var(--lime); filter: blur(120px); opacity: 0.07; pointer-events: none; z-index: 0; }
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s cubic-bezier(.16,1,.3,1), transform 0.65s cubic-bezier(.16,1,.3,1); }
+.reveal.visible { opacity: 1; transform: none; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-track { display: flex; width: max-content; animation: marquee 30s linear infinite; }
+.marquee-track:hover { animation-play-state: paused; }
+#navbar { background: rgba(8,12,16,0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); transition: all 0.3s; }
+[data-theme="light"] #navbar { background: rgba(247,248,244,0.85); }
+.nav-link { color: var(--fg2); font-weight: 600; font-size: 0.975rem; letter-spacing: 0.01em; position: relative; transition: color 0.2s; }
+.nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px; background: var(--lime); transform: scaleX(0); transition: transform 0.2s; border-radius: 2px; }
+.nav-link:hover { color: var(--fg); }
+.nav-link:hover::after { transform: scaleX(1); }
+.wa-pill { background: #25D366; color: #fff; border-radius: 99px; font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; gap: 6px; padding: 8px 16px; transition: transform 0.2s, box-shadow 0.2s; }
+.wa-pill:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.35); }
+.btn-lime { background: var(--lime); color: #080c10; font-family: 'Aclonica', sans-serif; font-weight: 800; border-radius: 999px; padding: 14px 32px; font-size: 1rem; letter-spacing: -0.01em; transition: transform 0.2s, box-shadow 0.2s; display: inline-flex; align-items: center; gap: 8px; white-space: normal; }
+.btn-lime:hover { transform: translateY(-3px); box-shadow: 0 16px 40px var(--lime-glow); }
+.btn-ghost { background: transparent; border: 2px solid var(--border); color: var(--fg); font-family: 'Aclonica', sans-serif; font-weight: 700; border-radius: 999px; padding: 12px 28px; font-size: 1rem; transition: border-color 0.2s, transform 0.2s; }
+.btn-ghost:hover { border-color: var(--lime); transform: translateY(-2px); }
+.card { background: var(--card); border: 1px solid var(--card-border); border-radius: 20px; transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s; }
+.card:hover { border-color: rgba(200,255,0,0.3); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(200,255,0,0.06); }
+[data-theme="light"] .card { background: #ffffff; border-color: rgba(0,0,0,0.08); }
+[data-theme="light"] .card:hover { border-color: rgba(90,130,0,0.3); box-shadow: 0 20px 60px rgba(90,130,0,0.08); }
+.feat-icon { width: 44px; height: 44px; background: var(--lime-soft); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--lime); margin-bottom: 20px; transition: background 0.2s, transform 0.2s; }
+.card:hover .feat-icon { background: var(--lime); color: #080c10; transform: scale(1.08); }
+.step-connector { width: 2px; flex: 1; background: linear-gradient(to bottom, var(--lime), transparent); margin: 8px auto; min-height: 40px; }
+.app-btn { width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--border); font-family: 'Aclonica', sans-serif; font-weight: 800; font-size: 0.9rem; color: var(--fg2); background: transparent; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; }
+.app-btn:hover:not(.selected) { border-color: var(--lime); color: var(--lime); }
+.app-btn.selected { background: var(--lime); border-color: var(--lime); color: #080c10; transform: scale(1.12); box-shadow: 0 8px 24px var(--lime-glow); }
+.price-big { font-family: 'Aclonica', sans-serif; font-size: 5rem; font-weight: 900; letter-spacing: -0.04em; color: var(--lime); line-height: 1; transition: all 0.3s; }
+.price-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 24px; padding: 40px; position: relative; overflow: hidden; }
+[data-theme="light"] .price-card { background: var(--bg2); }
+.price-shine { position: absolute; inset: 0; background: linear-gradient(135deg, var(--lime-soft) 0%, transparent 60%); pointer-events: none; }
+.stars { color: var(--lime); letter-spacing: 2px; font-size: 1rem; }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(.16,1,.3,1), padding 0.3s; color: var(--fg2); font-size: 0.9375rem; line-height: 1.7; }
+.faq-answer.open { max-height: 500px; padding-bottom: 20px; }
+.faq-icon { transition: transform 0.3s; }
+.faq-icon.open { transform: rotate(45deg); }
+#mobile-menu { display: none; background: var(--bg2); border-bottom: 1px solid var(--border); padding: 16px 20px 20px; flex-direction: column; gap: 0; }
+#mobile-menu.open { display: flex; }
+#mobile-menu a.nav-link { display: block; padding: 13px 0; border-bottom: 1px solid var(--border); font-size: 1rem; color: var(--fg2); text-decoration: none; }
+#mobile-menu a.nav-link:hover { color: var(--lime); }
+#mobile-menu .mob-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+#mobile-menu .mob-actions .wa-pill { justify-content: center; width: 100%; padding: 12px 16px; font-size: 0.9rem; }
+#mobile-menu .mob-actions .btn-lime { justify-content: center; width: 100%; padding: 12px 16px; font-size: 0.9rem; }
+.theme-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border); background: var(--bg2); cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--fg2); transition: all 0.2s; font-size: 1.1rem; }
+.theme-btn:hover { border-color: var(--lime); color: var(--lime); }
+.wa-float { position: fixed; bottom: 28px; right: 28px; width: 58px; height: 58px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(37,211,102,0.4); z-index: 100; transition: transform 0.2s, box-shadow 0.2s; }
+.wa-float:hover { transform: scale(1.1); box-shadow: 0 12px 40px rgba(37,211,102,0.55); }
+footer { background: var(--bg2); border-top: 1px solid var(--border); }
+.badge { display: inline-flex; align-items: center; gap: 6px; background: var(--lime-soft); border: 1px solid rgba(200,255,0,0.2); color: var(--lime); border-radius: 99px; padding: 4px 14px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+[data-theme="light"] .badge { background: rgba(90,130,0,0.08); border-color: rgba(90,130,0,0.2); }
+.stat-num { font-family: 'Aclonica', sans-serif; font-size: 3rem; font-weight: 900; color: var(--lime); line-height: 1; }
+.form-input { width: 100%; background: var(--bg3); border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; color: var(--fg); font-family: 'DM Sans', sans-serif; font-size: 0.9375rem; transition: border-color 0.2s; }
+.form-input:focus { outline: none; border-color: var(--lime); box-shadow: 0 0 0 3px var(--lime-soft); }
+.form-input::placeholder { color: var(--fg3); }
+#scroll-bar { position: fixed; top: 0; left: 0; height: 3px; background: var(--lime); z-index: 9999; width: 0%; transition: width 0.1s; }
+@keyframes ring-pulse { 0% { box-shadow: 0 0 0 0 var(--lime-glow); } 70% { box-shadow: 0 0 0 18px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+.btn-lime.pulse { animation: ring-pulse 2s infinite; }
+.section-divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+.success-app-card { background: var(--card); border: 1px solid var(--card-border); border-radius: 16px; padding: 20px; display: flex; gap: 16px; align-items: flex-start; transition: border-color 0.2s, transform 0.2s; }
+.success-app-card:hover { border-color: rgba(200,255,0,0.3); transform: translateY(-2px); }
+.success-app-img { width: 64px; height: 64px; border-radius: 14px; object-fit: cover; flex-shrink: 0; background: var(--bg3); }
+html { scroll-behavior: smooth; }
+.ind-card { background: var(--card); border: 1px solid var(--card-border); border-radius: 16px; padding: 24px 16px; text-align: center; transition: all 0.25s; }
+.ind-card:hover { border-color: var(--lime); transform: translateY(-6px); box-shadow: 0 12px 32px var(--lime-soft); }
+.ind-card .ico { width: 48px; height: 48px; background: var(--lime-soft); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 12px; transition: background 0.2s, transform 0.2s; }
+.ind-card:hover .ico { background: var(--lime); transform: scale(1.1); }
+.ribbon { position: absolute; top: -1px; right: 20px; background: var(--lime); color: #080c10; font-family: 'Aclonica', sans-serif; font-weight: 800; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 0 0 10px 10px; }
+.discount-badge { display: inline-flex; align-items: center; background: rgba(200,255,0,0.15); border: 1px solid rgba(200,255,0,0.3); color: var(--lime); border-radius: 99px; padding: 4px 14px; font-weight: 700; font-size: 0.85rem; transition: opacity 0.3s; }
+@media (max-width: 767px) { #navbar .max-w-7xl { padding-left: 16px; padding-right: 16px; } #home { padding-top: 100px; padding-left: 16px; padding-right: 16px; min-height: auto; padding-bottom: 60px; } #home h1 { font-size: clamp(1.9rem, 8vw, 2.6rem) !important; line-height: 1.3 !important; } #home p { font-size: 1rem !important; } #home { padding: 90px 16px 48px; } #home .max-w-5xl { width: 100%; } #home h1 { font-size: clamp(1.5rem, 7vw, 2.4rem) !important; line-height: 1.25 !important; word-break: break-word; } #home h1 span { display: block; } #home > div:last-child { display: none; } #home .flex.flex-col.sm\:flex-row { flex-direction: column !important; width: 100%; } #home .btn-lime, #home .btn-ghost { width: 100% !important; justify-content: center; box-sizing: border-box; } #home .flex.flex-wrap.items-center.justify-center.gap-6 { gap: 8px 12px; } #home .flex.flex-wrap.items-center.justify-center.gap-6 > span { font-size: 0.78rem; } #home .flex.flex-wrap.items-center.justify-center.gap-6 { gap: 10px 16px; } #home .flex.flex-col.sm\\:flex-row { flex-direction: column !important; align-items: stretch !important; } #home .flex.flex-col.sm\\:flex-row .btn-lime, #home .flex.flex-col.sm\\:flex-row .btn-ghost { width: 100%; justify-content: center; text-align: center; } .max-w-5xl.mx-auto.px-6.py-16 { padding-top: 40px; padding-bottom: 40px; } .stat-num { font-size: 2.2rem; } section[style*="padding:80px 24px"] { padding: 48px 16px !important; } .grid.grid-cols-2.sm\\:grid-cols-3.lg\\:grid-cols-6 { grid-template-columns: repeat(2, 1fr) !important; gap: 10px; } .ind-card { padding: 16px 10px; } .ind-card .ico { width: 40px; height: 40px; font-size: 1.2rem; } div[style*="display:flex;gap:24px;align-items:flex-start;padding:32px"] { padding: 16px !important; gap: 14px !important; } div[style*="width:56px;height:56px;background:var(--lime)"] { width: 44px !important; height: 44px !important; font-size: 1.1rem !important; } div[style*="min-width:56px"] { min-width: 44px !important; } .grid.md\\:grid-cols-2.lg\\:grid-cols-3 { grid-template-columns: 1fr !important; } .card.p-8 { padding: 20px !important; } .grid.md\\:grid-cols-3.gap-5 { grid-template-columns: 1fr !important; } .success-app-card { padding: 14px; gap: 12px; } .success-app-img { width: 52px; height: 52px; } .grid.md\\:grid-cols-2.lg\\:grid-cols-3.gap-5 { grid-template-columns: 1fr !important; } .card.p-7 { padding: 18px !important; } .flex.flex-col.md\\:flex-row.items-center.gap-6.mt-16 { flex-direction: column !important; } .font-display.font-black[style*="font-size:5rem"] { font-size: 3.5rem !important; } .price-card { padding: 20px !important; } .price-big { font-size: 3.5rem !important; } .app-btn { width: 42px; height: 42px; font-size: 0.82rem; } #price-display-area { padding: 20px !important; } form#hubOrderForm div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; } div[style*="display:grid;grid-template-columns:1fr 1fr;gap:10px"] { grid-template-columns: 1fr !important; } #faq { padding: 48px 16px !important; } section[style*="background:var(--lime)"] { padding: 48px 16px !important; } section[style*="background:var(--lime)"] h2 { font-size: clamp(1.7rem, 7vw, 2.5rem) !important; } section[style*="background:var(--lime)"] div[style*="display:flex;flex-wrap:wrap"] { flex-direction: column; align-items: stretch; } section[style*="background:var(--lime)"] a { justify-content: center; text-align: center; } footer .grid.md\\:grid-cols-4 { grid-template-columns: 1fr !important; gap: 32px; } footer div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; } footer { padding: 40px 16px 24px !important; } footer div[style*="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between"] { flex-direction: column; gap: 8px; text-align: center; } .wa-float { width: 50px; height: 50px; bottom: 20px; right: 16px; } .glow-blob { display: none; } .marquee-track span { font-size: 0.7rem !important; gap: 24px !important; padding: 0 24px !important; } .badge { font-size: 0.68rem; padding: 4px 10px; text-align: center; } h2.font-display { font-size: clamp(1.7rem, 6vw, 2.6rem) !important; } h2 br { display: none; } .ribbon { font-size: 0.62rem; padding: 3px 10px; right: 12px; } #price-total { font-size: 0.9rem; } }
+</style>
 
-        /* ── Base ── */
-        *, *::before, *::after { box-sizing: border-box; }
-        html { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--fg); overflow-x: hidden; }
-        body { background: var(--bg); color: var(--fg); transition: background 0.3s, color 0.3s; }
-
-        /* ── Typography ── */
-        .font-display { font-family: 'Aclonica', sans-serif; }
-
-        /* ── Grid texture ── */
-        .grid-bg {
-            background-image:
-                linear-gradient(var(--border) 1px, transparent 1px),
-                linear-gradient(90deg, var(--border) 1px, transparent 1px);
-            background-size: 48px 48px;
-        }
-
-        /* ── Noise grain overlay ── */
-        .grain::after {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-            pointer-events: none;
-            z-index: 9999;
-            opacity: 0.35;
-        }
-
-        /* ── Lime glow blob ── */
-        .glow-blob {
-            position: absolute;
-            border-radius: 50%;
-            background: var(--lime);
-            filter: blur(120px);
-            opacity: 0.07;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        /* ── Scroll reveal ── */
-        .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s cubic-bezier(.16,1,.3,1), transform 0.65s cubic-bezier(.16,1,.3,1); }
-        .reveal.visible { opacity: 1; transform: none; }
-
-        /* ── Marquee ── */
-        @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-        .marquee-track { display: flex; width: max-content; animation: marquee 30s linear infinite; }
-        .marquee-track:hover { animation-play-state: paused; }
-
-        /* ── Nav ── */
-        #navbar {
-            background: rgba(8,12,16,0.7);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
-            transition: all 0.3s;
-        }
-        [data-theme="light"] #navbar {
-            background: rgba(247,248,244,0.85);
-        }
-        .nav-link {
-            color: var(--fg2);
-            font-weight: 600;
-            font-size: 0.975rem;
-            letter-spacing: 0.01em;
-            position: relative;
-            transition: color 0.2s;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -4px; left: 0; right: 0;
-            height: 2px;
-            background: var(--lime);
-            transform: scaleX(0);
-            transition: transform 0.2s;
-            border-radius: 2px;
-        }
-        .nav-link:hover { color: var(--fg); }
-        .nav-link:hover::after { transform: scaleX(1); }
-
-        /* ── Whatsapp pill ── */
-        .wa-pill {
-            background: #25D366;
-            color: #fff;
-            border-radius: 99px;
-            font-weight: 700;
-            font-size: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            padding: 8px 16px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .wa-pill:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.35); }
-
-        /* ── CTA Buttons ── */
-        .btn-lime {
-            background: var(--lime);
-            color: #080c10;
-            font-family: 'Aclonica', sans-serif;
-            font-weight: 800;
-            border-radius: 999px;
-            padding: 14px 32px;
-            font-size: 1rem;
-            letter-spacing: -0.01em;
-            transition: transform 0.2s, box-shadow 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            white-space: normal;
-        }
-        .btn-lime:hover { transform: translateY(-3px); box-shadow: 0 16px 40px var(--lime-glow); }
-        .btn-ghost {
-            background: transparent;
-            border: 2px solid var(--border);
-            color: var(--fg);
-            font-family: 'Aclonica', sans-serif;
-            font-weight: 700;
-            border-radius: 999px;
-            padding: 12px 28px;
-            font-size: 1rem;
-            transition: border-color 0.2s, transform 0.2s;
-        }
-        .btn-ghost:hover { border-color: var(--lime); transform: translateY(-2px); }
-
-        /* ── Card ── */
-        .card {
-            background: var(--card);
-            border: 1px solid var(--card-border);
-            border-radius: 20px;
-            transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
-        }
-        .card:hover {
-            border-color: rgba(200,255,0,0.3);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 60px rgba(200,255,0,0.06);
-        }
-        [data-theme="light"] .card { background: #ffffff; border-color: rgba(0,0,0,0.08); }
-        [data-theme="light"] .card:hover { border-color: rgba(90,130,0,0.3); box-shadow: 0 20px 60px rgba(90,130,0,0.08); }
-
-        /* ── Feature icon ── */
-        .feat-icon {
-            width: 44px; height: 44px;
-            background: var(--lime-soft);
-            border-radius: 12px;
-            display: flex; align-items: center; justify-content: center;
-            color: var(--lime);
-            margin-bottom: 20px;
-            transition: background 0.2s, transform 0.2s;
-        }
-        .card:hover .feat-icon { background: var(--lime); color: #080c10; transform: scale(1.08); }
-
-        /* ── Step connector ── */
-        .step-connector { width: 2px; flex: 1; background: linear-gradient(to bottom, var(--lime), transparent); margin: 8px auto; min-height: 40px; }
-
-        /* ── Pricing ── */
-        .app-btn {
-            width: 48px; height: 48px;
-            border-radius: 50%;
-            border: 2px solid var(--border);
-            font-family: 'Aclonica', sans-serif;
-            font-weight: 800;
-            font-size: 0.9rem;
-            color: var(--fg2);
-            background: transparent;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex; align-items: center; justify-content: center;
-        }
-        .app-btn:hover:not(.selected) { border-color: var(--lime); color: var(--lime); }
-        .app-btn.selected {
-            background: var(--lime);
-            border-color: var(--lime);
-            color: #080c10;
-            transform: scale(1.12);
-            box-shadow: 0 8px 24px var(--lime-glow);
-        }
-
-        /* ── Price display ── */
-        .price-big {
-            font-family: 'Aclonica', sans-serif;
-            font-size: 5rem;
-            font-weight: 900;
-            letter-spacing: -0.04em;
-            color: var(--lime);
-            line-height: 1;
-            transition: all 0.3s;
-        }
-        .price-card {
-            background: var(--bg2);
-            border: 1px solid var(--border);
-            border-radius: 24px;
-            padding: 40px;
-            position: relative;
-            overflow: hidden;
-        }
-        [data-theme="light"] .price-card { background: var(--bg2); }
-        .price-shine {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, var(--lime-soft) 0%, transparent 60%);
-            pointer-events: none;
-        }
-
-        /* ── Testimonial ── */
-        .stars { color: var(--lime); letter-spacing: 2px; font-size: 1rem; }
-
-        /* ── FAQ ── */
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s cubic-bezier(.16,1,.3,1), padding 0.3s;
-            color: var(--fg2);
-            font-size: 0.9375rem;
-            line-height: 1.7;
-        }
-        .faq-answer.open { max-height: 500px; padding-bottom: 20px; }
-        .faq-icon { transition: transform 0.3s; }
-        .faq-icon.open { transform: rotate(45deg); }
-
-        /* ── Mobile menu ── */
-        #mobile-menu {
-            display: none;
-            background: var(--bg2);
-            border-bottom: 1px solid var(--border);
-            padding: 16px 20px 20px;
-            flex-direction: column;
-            gap: 0;
-        }
-        #mobile-menu.open { display: flex; }
-
-        /* ── Mobile menu nav links ── */
-        #mobile-menu a.nav-link {
-            display: block;
-            padding: 13px 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 1rem;
-            color: var(--fg2);
-            text-decoration: none;
-        }
-        #mobile-menu a.nav-link:hover { color: var(--lime); }
-
-        /* ── Mobile menu bottom actions row ── */
-        #mobile-menu .mob-actions {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 16px;
-            padding-top: 16px;
-            border-top: 1px solid var(--border);
-        }
-        #mobile-menu .mob-actions .wa-pill {
-            justify-content: center;
-            width: 100%;
-            padding: 12px 16px;
-            font-size: 0.9rem;
-        }
-        #mobile-menu .mob-actions .btn-lime {
-            justify-content: center;
-            width: 100%;
-            padding: 12px 16px;
-            font-size: 0.9rem;
-        }
-
-        /* ── Theme toggle ── */
-        .theme-btn {
-            width: 40px; height: 40px;
-            border-radius: 50%;
-            border: 1px solid var(--border);
-            background: var(--bg2);
-            cursor: pointer;
-            display: flex; align-items: center; justify-content: center;
-            color: var(--fg2);
-            transition: all 0.2s;
-            font-size: 1.1rem;
-        }
-        .theme-btn:hover { border-color: var(--lime); color: var(--lime); }
-
-        
-
-        /* ── WhatsApp float ── */
-        .wa-float {
-            position: fixed;
-            bottom: 28px; right: 28px;
-            width: 58px; height: 58px;
-            border-radius: 50%;
-            background: #25D366;
-            display: flex; align-items: center; justify-content: center;
-            box-shadow: 0 8px 32px rgba(37,211,102,0.4);
-            z-index: 100;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .wa-float:hover { transform: scale(1.1); box-shadow: 0 12px 40px rgba(37,211,102,0.55); }
-
-        /* ── Footer ── */
-        footer {
-            background: var(--bg2);
-            border-top: 1px solid var(--border);
-        }
-
-        /* ── Badge ── */
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: var(--lime-soft);
-            border: 1px solid rgba(200,255,0,0.2);
-            color: var(--lime);
-            border-radius: 99px;
-            padding: 4px 14px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-        [data-theme="light"] .badge {
-            background: rgba(90,130,0,0.08);
-            border-color: rgba(90,130,0,0.2);
-        }
-
-        /* ── Stat counter ── */
-        .stat-num {
-            font-family: 'Aclonica', sans-serif;
-            font-size: 3rem;
-            font-weight: 900;
-            color: var(--lime);
-            line-height: 1;
-        }
-
-        /* ── Input ── */
-        .form-input {
-            width: 100%;
-            background: var(--bg3);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 14px 18px;
-            color: var(--fg);
-            font-family: 'DM Sans', sans-serif;
-            font-size: 0.9375rem;
-            transition: border-color 0.2s;
-        }
-        .form-input:focus { outline: none; border-color: var(--lime); box-shadow: 0 0 0 3px var(--lime-soft); }
-        .form-input::placeholder { color: var(--fg3); }
-
-        /* ── Scroll progress ── */
-        #scroll-bar {
-            position: fixed;
-            top: 0; left: 0;
-            height: 3px;
-            background: var(--lime);
-            z-index: 9999;
-            width: 0%;
-            transition: width 0.1s;
-        }
-
-        /* ── Pulse ring on CTA ── */
-        @keyframes ring-pulse {
-            0% { box-shadow: 0 0 0 0 var(--lime-glow); }
-            70% { box-shadow: 0 0 0 18px transparent; }
-            100% { box-shadow: 0 0 0 0 transparent; }
-        }
-        .btn-lime.pulse { animation: ring-pulse 2s infinite; }
-
-        /* ── Section divider ── */
-        .section-divider { border: none; border-top: 1px solid var(--border); margin: 0; }
-
-        /* ── Success stories card (for iframe-less preview) ── */
-        .success-app-card {
-            background: var(--card);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 20px;
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-            transition: border-color 0.2s, transform 0.2s;
-        }
-        .success-app-card:hover { border-color: rgba(200,255,0,0.3); transform: translateY(-2px); }
-        .success-app-img {
-            width: 64px; height: 64px;
-            border-radius: 14px;
-            object-fit: cover;
-            flex-shrink: 0;
-            background: var(--bg3);
-        }
-
-        /* ── Scroll to section smooth ── */
-        html { scroll-behavior: smooth; }
-
-        /* ── Industry card ── */
-        .ind-card {
-            background: var(--card);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 24px 16px;
-            text-align: center;
-            transition: all 0.25s;
-        }
-        .ind-card:hover {
-            border-color: var(--lime);
-            transform: translateY(-6px);
-            box-shadow: 0 12px 32px var(--lime-soft);
-        }
-        .ind-card .ico {
-            width: 48px; height: 48px;
-            background: var(--lime-soft);
-            border-radius: 12px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 1.5rem;
-            margin: 0 auto 12px;
-            transition: background 0.2s, transform 0.2s;
-        }
-        .ind-card:hover .ico { background: var(--lime); transform: scale(1.1); }
-
-        /* ── Ribbon ── */
-        .ribbon {
-            position: absolute;
-            top: -1px; right: 20px;
-            background: var(--lime);
-            color: #080c10;
-            font-family: 'Aclonica', sans-serif;
-            font-weight: 800;
-            font-size: 0.7rem;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            padding: 4px 12px;
-            border-radius: 0 0 10px 10px;
-        }
-
-        /* ── Discount badge ── */
-        .discount-badge {
-            display: inline-flex;
-            align-items: center;
-            background: rgba(200,255,0,0.15);
-            border: 1px solid rgba(200,255,0,0.3);
-            color: var(--lime);
-            border-radius: 99px;
-            padding: 4px 14px;
-            font-weight: 700;
-            font-size: 0.85rem;
-            transition: opacity 0.3s;
-        }
-
-        /* ══════════════════════════════════════════
-           MOBILE RESPONSIVE FIXES
-           Breakpoint: max-width 767px (below md)
-        ══════════════════════════════════════════ */
-        @media (max-width: 767px) {
-
-            /* ── Navbar: tighter padding ── */
-            #navbar .max-w-7xl { padding-left: 16px; padding-right: 16px; }
-
-            /* ── Hero: reduce top padding, smaller font ── */
-            #home { padding-top: 100px; padding-left: 16px; padding-right: 16px; min-height: auto; padding-bottom: 60px; }
-            #home h1 { font-size: clamp(1.9rem, 8vw, 2.6rem) !important; line-height: 1.3 !important; }
-            #home p { font-size: 1rem !important; }
-
-            /* ── Hero section ── */
-            #home { padding: 90px 16px 48px; }
-            #home .max-w-5xl { width: 100%; }
-            #home h1 { font-size: clamp(1.5rem, 7vw, 2.4rem) !important; line-height: 1.25 !important; word-break: break-word; }
-            #home h1 span { display: block; }
-            #home > div:last-child { display: none; } /* hide scroll cue */
-
-            /* ── CTA buttons: stack + full width ── */
-            #home .flex.flex-col.sm\:flex-row { flex-direction: column !important; width: 100%; }
-            #home .btn-lime, #home .btn-ghost { width: 100% !important; justify-content: center; box-sizing: border-box; }
-
-            /* ── Trust badges: 2 per row ── */
-            #home .flex.flex-wrap.items-center.justify-center.gap-6 { gap: 8px 12px; }
-            #home .flex.flex-wrap.items-center.justify-center.gap-6 > span { font-size: 0.78rem; }
-
-            /* ── Trust badge row: wrap tightly ── */
-            #home .flex.flex-wrap.items-center.justify-center.gap-6 { gap: 10px 16px; }
-
-            /* ── CTA buttons: full width on mobile ── */
-            #home .flex.flex-col.sm\\:flex-row { flex-direction: column !important; align-items: stretch !important; }
-            #home .flex.flex-col.sm\\:flex-row .btn-lime,
-            #home .flex.flex-col.sm\\:flex-row .btn-ghost { width: 100%; justify-content: center; text-align: center; }
-
-            /* ── Stats bar: 2 columns already set, reduce padding ── */
-            .max-w-5xl.mx-auto.px-6.py-16 { padding-top: 40px; padding-bottom: 40px; }
-            .stat-num { font-size: 2.2rem; }
-
-            /* ── Section padding: tighter on mobile ── */
-            section[style*="padding:80px 24px"] { padding: 48px 16px !important; }
-
-            /* ── Who it's for: 2 col grid, smaller cards ── */
-            .grid.grid-cols-2.sm\\:grid-cols-3.lg\\:grid-cols-6 { grid-template-columns: repeat(2, 1fr) !important; gap: 10px; }
-            .ind-card { padding: 16px 10px; }
-            .ind-card .ico { width: 40px; height: 40px; font-size: 1.2rem; }
-
-            /* ── How it works: reduce step padding ── */
-            div[style*="display:flex;gap:24px;align-items:flex-start;padding:32px"] { padding: 16px !important; gap: 14px !important; }
-            div[style*="width:56px;height:56px;background:var(--lime)"] { width: 44px !important; height: 44px !important; font-size: 1.1rem !important; }
-            div[style*="min-width:56px"] { min-width: 44px !important; }
-
-            /* ── Feature cards: single column ── */
-            .grid.md\\:grid-cols-2.lg\\:grid-cols-3 { grid-template-columns: 1fr !important; }
-            .card.p-8 { padding: 20px !important; }
-
-            /* ── Success preview: single column ── */
-            .grid.md\\:grid-cols-3.gap-5 { grid-template-columns: 1fr !important; }
-            .success-app-card { padding: 14px; gap: 12px; }
-            .success-app-img { width: 52px; height: 52px; }
-
-            /* ── Testimonials: single column ── */
-            .grid.md\\:grid-cols-2.lg\\:grid-cols-3.gap-5 { grid-template-columns: 1fr !important; }
-            .card.p-7 { padding: 18px !important; }
-
-            /* ── Rating summary: stack vertically ── */
-            .flex.flex-col.md\\:flex-row.items-center.gap-6.mt-16 { flex-direction: column !important; }
-            .font-display.font-black[style*="font-size:5rem"] { font-size: 3.5rem !important; }
-
-            /* ── Pricing card: reduce padding ── */
-            .price-card { padding: 20px !important; }
-            .price-big { font-size: 3.5rem !important; }
-
-            /* ── App selector buttons: slightly smaller ── */
-            .app-btn { width: 42px; height: 42px; font-size: 0.82rem; }
-
-            /* ── Price display area: reduce padding ── */
-            #price-display-area { padding: 20px !important; }
-
-            /* ── Order form: single column ── */
-            form#hubOrderForm div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
-
-            /* ── What's included grid: single column ── */
-            div[style*="display:grid;grid-template-columns:1fr 1fr;gap:10px"] { grid-template-columns: 1fr !important; }
-
-            /* ── FAQ section padding ── */
-            #faq { padding: 48px 16px !important; }
-
-            /* ── Final CTA section ── */
-            section[style*="background:var(--lime)"] { padding: 48px 16px !important; }
-            section[style*="background:var(--lime)"] h2 { font-size: clamp(1.7rem, 7vw, 2.5rem) !important; }
-            section[style*="background:var(--lime)"] div[style*="display:flex;flex-wrap:wrap"] { flex-direction: column; align-items: stretch; }
-            section[style*="background:var(--lime)"] a { justify-content: center; text-align: center; }
-
-            /* ── Footer: stack columns ── */
-            footer .grid.md\\:grid-cols-4 { grid-template-columns: 1fr !important; gap: 32px; }
-            footer div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
-            footer { padding: 40px 16px 24px !important; }
-
-            /* ── Footer bottom row: column layout ── */
-            footer div[style*="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between"] {
-                flex-direction: column; gap: 8px; text-align: center;
-            }
-
-            /* ── WA float: slightly smaller ── */
-            .wa-float { width: 50px; height: 50px; bottom: 20px; right: 16px; }
-
-            /* ── Glow blobs: hide on mobile to save paint ── */
-            .glow-blob { display: none; }
-
-            /* ── Marquee text: smaller ── */
-            .marquee-track span { font-size: 0.7rem !important; gap: 24px !important; padding: 0 24px !important; }
-
-            /* ── Badge: wrap text if needed ── */
-            .badge { font-size: 0.68rem; padding: 4px 10px; text-align: center; }
-
-            /* ── Section headings ── */
-            h2.font-display { font-size: clamp(1.7rem, 6vw, 2.6rem) !important; }
-
-            /* ── Who it's for heading: no forced line break ── */
-            h2 br { display: none; }
-
-            /* ── Ribbon: adjust for mobile ── */
-            .ribbon { font-size: 0.62rem; padding: 3px 10px; right: 12px; }
-
-            /* ── Price total text ── */
-            #price-total { font-size: 0.9rem; }
-        }
-
-        /* ── Small phones (max 380px) ── */
-        @media (max-width: 380px) {
-            #home h1 { font-size: 1.7rem !important; }
-            .app-btn { width: 36px; height: 36px; font-size: 0.75rem; }
-            .price-big { font-size: 3rem !important; }
-            .nav-link { font-size: 0.85rem; }
-        }
-    </style>
 </head>
 
 <!-- ── SCROLL PROGRESS ── -->
@@ -712,12 +217,14 @@
         </a>
 
         <!-- Desktop Nav -->
-        <nav class="hidden md:flex items-center gap-7" id="nav-links">
-            <a href="#how-it-works" class="nav-link">How it Works</a>
-            <a href="#pricing" class="nav-link">Pricing</a>
-            <a href="success-stories.html" class="nav-link">Success Stories</a>
-            <a href="#faq" class="nav-link">FAQ</a>
-            <a href="https://12testershub.com/blog/" class="nav-link">Blog</a>
+        <nav class="hidden md:flex items-center gap-6" id="nav-links">
+            <a href="/#how-it-works" class="nav-link">How it Works</a>
+            <a href="/#pricing" class="nav-link">Pricing</a>
+            <a href="/success-stories.html" class="nav-link">Success Stories</a>
+            <a href="/about.html" class="nav-link">About</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+            <a href="/faq.html" class="nav-link">FAQ</a>
+            <a href="/blog" class="nav-link">Blog</a>
             <a href="https://wa.me/923392211021" target="_blank" class="wa-pill">
                 <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                 <span>WhatsApp</span>
@@ -727,9 +234,9 @@
         <!-- Controls -->
         <div class="flex items-center gap-3">
             <!-- Theme Toggle -->
-            <button class="theme-btn" id="theme-toggle" title="Toggle dark/light mode">🌙</button>
+            <button class="theme-btn" id="theme-toggle" title="Toggle dark/light mode">☀️</button>
             <!-- CTA -->
-            <a href="#pricing" class="btn-lime hidden md:inline-flex pulse" style="font-size:0.85rem;padding:10px 22px;">Get Testers Now →</a>
+            <a href="/#pricing" class="btn-lime hidden md:inline-flex pulse" style="font-size:0.85rem;padding:10px 22px;">Get Testers Now →</a>
             <!-- Hamburger -->
             <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
                 <span class="block w-6 h-0.5" style="background:var(--fg);transition:all 0.3s;" id="ham1"></span>
@@ -741,17 +248,19 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu">
-        <a href="#how-it-works" class="nav-link">How it Works</a>
-        <a href="#pricing" class="nav-link">Pricing</a>
-        <a href="success-stories.html" class="nav-link">Success Stories</a>
-        <a href="#faq" class="nav-link">FAQ</a>
-        <a href="https://12testershub.com/blog/" class="nav-link">Blog</a>
+        <a href="/#how-it-works" class="nav-link">How it Works</a>
+        <a href="/#pricing" class="nav-link">Pricing</a>
+        <a href="/success-stories.html" class="nav-link">Success Stories</a>
+        <a href="/about.html" class="nav-link">About Us</a>
+        <a href="/contact.html" class="nav-link">Contact Us</a>
+        <a href="/faq.html" class="nav-link">FAQ</a>
+        <a href="/blog/production-access-questionnaire-answers.html" class="nav-link">Blog</a>
         <div class="mob-actions">
             <a href="https://wa.me/923392211021" class="wa-pill" target="_blank" rel="noopener">
                 <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                 Chat on WhatsApp
             </a>
-            <a href="#pricing" class="btn-lime">Get Testers Now →</a>
+            <a href="/#pricing" class="btn-lime">Get Testers Now →</a>
         </div>
     </div>
 </header>
@@ -768,14 +277,14 @@
         <!-- Badge -->
         <div class="badge mb-8 reveal">
             <span>🔥</span>
-            <span>#1 Google Play Testing Service — Trusted by 2,400+ Developers</span>
+            <span>#1 Google Play Testing Service — Trusted by 100s+ Developers</span>
         </div>
 
         <!-- Headline -->
         <h1 class="font-display font-black leading-[1.5] tracking-tight mb-6 reveal" style="font-size:clamp(1.6rem,6vw,3.2rem);transition-delay:0.08s;">
-            <span>😤 No More Begging for Testers.</span><br>
-            <span style="color:var(--lime); font-size:clamp(1.6rem,6vw,3rem);transition-delay:0.08s;">🎯 We break the Google barriers.</span><br>
-            <span style="font-size:clamp(1.6rem,6vw,2.5rem);transition-delay:0.08s;">🚀 12 Testers. 14 Days. Your APP Goes Live.</span>
+            <span>.No More Begging for Testers😤</span><br>
+            <span style="color:var(--lime); font-size:clamp(1.6rem,6vw,3rem);transition-delay:0.08s;">🔨We break the Google barriers.</span><br>
+            <span style="font-size:clamp(1.6rem,6vw,2.5rem);transition-delay:0.08s;">.12 Testers. 14 Days. Your APP Goes Live🚀</span>
         </h1>
 
         <!-- Subheading -->
@@ -986,11 +495,10 @@
             <p style="color:var(--fg2);margin-top:12px;">Real developers. Real apps. Real results — verified and published.</p>
         </div>
 
-        <!-- Preview cards (last 3 success apps) -->
+        <!-- Preview cards -->
         <div class="grid md:grid-cols-3 gap-5 mb-10 reveal" id="success-preview">
-            <!-- These are template examples — add more in success-stories.html -->
             <a href="success-stories.html" class="success-app-card" style="text-decoration:none;color:inherit;">
-                <img src="https://placehold.co/64x64/c8ff00/080c10?text=📱" alt="FitTrack Pro" class="success-app-img">
+                <img src="https://placehold.co/64x64/c8ff00/080c10?text=📱" alt="FitTrack Pro App Icon" class="success-app-img" loading="lazy">
                 <div>
                     <div style="font-weight:700;font-size:0.95rem;">FitTrack Pro</div>
                     <div style="color:var(--fg2);font-size:0.8rem;margin:4px 0;">Health & Fitness — Launched in 16 days</div>
@@ -998,7 +506,7 @@
                 </div>
             </a>
             <a href="success-stories.html" class="success-app-card" style="text-decoration:none;color:inherit;">
-                <img src="https://placehold.co/64x64/c8ff00/080c10?text=🎮" alt="PuzzleQuest" class="success-app-img">
+                <img src="https://placehold.co/64x64/c8ff00/080c10?text=🎮" alt="PuzzleQuest Arena App Icon" class="success-app-img" loading="lazy">
                 <div>
                     <div style="font-weight:700;font-size:0.95rem;">PuzzleQuest Arena</div>
                     <div style="color:var(--fg2);font-size:0.8rem;margin:4px 0;">Mobile Gaming — Launched in 15 days</div>
@@ -1006,7 +514,7 @@
                 </div>
             </a>
             <a href="success-stories.html" class="success-app-card" style="text-decoration:none;color:inherit;">
-                <img src="https://placehold.co/64x64/c8ff00/080c10?text=💰" alt="BudgetWise" class="success-app-img">
+                <img src="https://placehold.co/64x64/c8ff00/080c10?text=💰" alt="BudgetWise App Icon" class="success-app-img" loading="lazy">
                 <div>
                     <div style="font-weight:700;font-size:0.95rem;">BudgetWise</div>
                     <div style="color:var(--fg2);font-size:0.8rem;margin:4px 0;">Finance — Launched in 14 days</div>
@@ -1149,9 +657,9 @@
             </div>
 
             <!-- Order form -->
-			<br>
-			            <center>
-						<div class="badge mb-4">Secure Testers Now</div>
+            <br>
+                        <center>
+                        <div class="badge mb-4">Secure Testers Now</div>
 </center>
            <form id="hubOrderForm">
     <input type="hidden" name="selected_plan" id="hidden-plan-input" value="1 App - $49/app (Total: $49)">
@@ -1191,10 +699,6 @@
         <span>Proceed to Payment →</span>
     </button>
 </form>
-
-
-
-
 
             <p style="text-align:center;font-size:0.8rem;color:var(--fg3);margin-top:14px;">We'll confirm via WhatsApp within 1 hour. Have your opt-in link ready.</p>
         </div>
@@ -1256,35 +760,41 @@
                     Chat on WhatsApp
                 </a>
             </div>
-            <!-- Links -->
+            
+            <!-- Quick Links -->
             <div>
                 <h4 style="font-family:'Aclonica',sans-serif;font-weight:800;font-size:0.9rem;margin-bottom:14px;letter-spacing:0.05em;text-transform:uppercase;">Quick Links</h4>
                 <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-                    <li><a href="#how-it-works" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">How it Works</a></li>
-                    <li><a href="#pricing" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Pricing</a></li>
-                    <li><a href="success-stories.html" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Success Stories</a></li>
-                    <li><a href="#faq" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">FAQ</a></li>
-                    <li><a href="https://12testershub.com/blog/" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Blog</a></li>
-                    <li><a href="/privacy" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Privacy Policy</a></li>
-                    <li><a href="/terms" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Terms of Service</a></li>
+                    <li><a href="/#how-it-works" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">How it Works</a></li>
+                    <li><a href="/#pricing" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Pricing</a></li>
+                    <li><a href="/success-stories.html" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Success Stories</a></li>
+                    <li><a href="/about.html" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">About Us</a></li>
+                    <li><a href="/contact.html" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Contact Us</a></li>
+                    <li><a href="/faq.html" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">FAQ</a></li>
                 </ul>
             </div>
+            
+            <!-- Legal Links -->
+            <div>
+                <h4 style="font-family:'Aclonica',sans-serif;font-weight:800;font-size:0.9rem;margin-bottom:14px;letter-spacing:0.05em;text-transform:uppercase;">Legal</h4>
+                <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+                    <li><a href="/privacy.html" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Privacy Policy</a></li>
+                    <li><a href="/terms.html" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Terms of Service</a></li>
+                    <li><a href="/refund-policy.html" style="color:var(--fg2);text-decoration:none;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Refund Policy</a></li>
+                </ul>
+            </div>
+
             <!-- Resources -->
-            <div class="md:col-span-2">
-                <h4 style="font-family:'Aclonica',sans-serif;font-weight:800;font-size:0.9rem;margin-bottom:14px;letter-spacing:0.05em;text-transform:uppercase;">Developer Guides</h4>
-                <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap-x:16px;gap-y:10px;">
-                    <li><a href="/blog/production-access-rejected-reasons" style="color:var(--fg2);text-decoration:none;font-size:0.8rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Why Production Access Gets Rejected</a></li>
-                    <li><a href="/blog/internal-vs-closed-testing-google-play" style="color:var(--fg2);text-decoration:none;font-size:0.8rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Internal vs Closed Testing</a></li>
-                    <li><a href="/blog/production-access-questionnaire-answers" style="color:var(--fg2);text-decoration:none;font-size:0.8rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Questionnaire Answers Guide</a></li>
-                    <li><a href="/blog/real-vs-fake-android-testers" style="color:var(--fg2);text-decoration:none;font-size:0.8rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Real vs Fake Android Testers</a></li>
-                    <li><a href="/blog/setup-closed-testing-play-console" style="color:var(--fg2);text-decoration:none;font-size:0.8rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Setup Closed Testing in Play Console</a></li>
-                    <li><a href="/blog/closed-testing-to-production-guide" style="color:var(--fg2);text-decoration:none;font-size:0.8rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Closed Testing to Production Guide</a></li>
+            <div>
+                <h4 style="font-family:'Aclonica',sans-serif;font-weight:800;font-size:0.9rem;margin-bottom:14px;letter-spacing:0.05em;text-transform:uppercase;">Resources</h4>
+                <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+                    <li><a href="/blog/production-access-questionnaire-answers.html" style="color:var(--fg2);text-decoration:none;font-size:0.8rem;transition:color 0.2s;" onmouseover="this.style.color='var(--lime)'" onmouseout="this.style.color='var(--fg2)'">Questionnaire Answers Guide</a></li>
                 </ul>
             </div>
         </div>
 
         <div style="border-top:1px solid var(--border);padding-top:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;">
-            <div style="color:var(--fg3);font-size:0.8rem;">© 2026 12 Testers Hub. All rights reserved.</div>
+            <div style="color:var(--fg3);font-size:0.8rem;">© 2024 12 Testers Hub. All rights reserved.</div>
             <div style="color:var(--fg3);font-size:0.8rem;">Built for Android developers who ship.</div>
         </div>
     </div>
@@ -1338,9 +848,17 @@ mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => 
 // ── THEME TOGGLE ─────────────────────────────────────────────────────────────
 const themeBtn = document.getElementById('theme-toggle');
 const html = document.documentElement;
-let isDark = true;
-// Load saved preference
-if (localStorage.getItem('theme') === 'light') { isDark = false; html.setAttribute('data-theme','light'); themeBtn.textContent = '☀️'; }
+let isDark = false; // Default to light theme
+
+// Load saved preference (if user previously switched to dark)
+if (localStorage.getItem('theme') === 'dark') { 
+    isDark = true; 
+    html.setAttribute('data-theme','dark'); 
+    themeBtn.textContent = '🌙'; 
+} else {
+    html.setAttribute('data-theme','light'); 
+    themeBtn.textContent = '☀️';
+}
 
 themeBtn.addEventListener('click', () => {
     isDark = !isDark;
@@ -1349,23 +867,18 @@ themeBtn.addEventListener('click', () => {
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 
-
-    // Handle href-only elements});
-
 // ── PRICING CALCULATOR ───────────────────────────────────────────────────────
-// Volume pricing: $49 for 1 app, graduating down to $19 for 10+ apps
-// Discount percentages calculated from base price of $49
 const pricingData = {
-    1:  { price: 49, total: 49,                    discount: 0  }, // No discount
-    2:  { price: 39, total: 78,                    discount: 20 }, // 20% off
-    3:  { price: 34, total: 102,                   discount: 31 }, // 31% off
-    4:  { price: 29, total: 116,                   discount: 41 }, // 41% off
-    5:  { price: 25, total: 125,                   discount: 49 }, // 49% off
-    6:  { price: 23, total: 138,                   discount: 53 }, // 53% off
-    7:  { price: 22, total: 154,                   discount: 55 }, // 55% off
-    8:  { price: 21, total: 168,                   discount: 57 }, // 57% off
-    9:  { price: 20, total: 180,                   discount: 59 }, // 59% off
-    10: { price: 19, total: 'Custom Quote',        discount: 61 }  // 61% off — best value
+    1:  { price: 49, total: 49,                    discount: 0  }, 
+    2:  { price: 39, total: 78,                    discount: 20 }, 
+    3:  { price: 34, total: 102,                   discount: 31 },
+    4:  { price: 29, total: 116,                   discount: 41 }, 
+    5:  { price: 25, total: 125,                   discount: 49 }, 
+    6:  { price: 23, total: 138,                   discount: 53 }, 
+    7:  { price: 22, total: 154,                   discount: 55 }, 
+    8:  { price: 21, total: 168,                   discount: 57 }, 
+    9:  { price: 20, total: 180,                   discount: 59 },
+    10: { price: 19, total: 'Custom Quote',        discount: 61 }  
 };
 
 const counterContainer = document.getElementById('app-counter');
@@ -1386,22 +899,18 @@ for (let i = 1; i <= 10; i++) {
 
 // Update pricing display when an app count is selected
 function selectAppCount(count, btnEl) {
-    // Deselect all
     document.querySelectorAll('.app-btn').forEach(b => b.classList.remove('selected'));
     btnEl.classList.add('selected');
 
     const data = pricingData[count];
     const isMax = count === 10;
 
-    // Update price display
     priceDisplayLarge.textContent = '$' + data.price;
 
-    // Update total
     priceTotal.textContent = isMax
         ? 'Total: Contact for Custom Quote'
         : `Total: $${data.total}`;
 
-    // Update savings badge
     if (data.discount > 0) {
         priceSavings.textContent = `Save ${data.discount}%${isMax ? ' 🔥 Best Value' : ''}`;
         priceSavings.style.display = 'inline-flex';
@@ -1409,7 +918,6 @@ function selectAppCount(count, btnEl) {
         priceSavings.style.display = 'none';
     }
 
-    // Update hidden form field for order context
     const label = isMax ? '10+ Apps' : `${count} App${count > 1 ? 's' : ''}`;
     const finalTotal = isMax ? 'Custom Quote' : `$${data.total}`;
     hiddenPlanInput.value = `${label} — $${data.price}/app (Total: ${finalTotal}, Discount: ${data.discount}%)`;
@@ -1477,7 +985,6 @@ function toggleFaq(btn) {
     const item = btn.parentElement;
     const isOpen = answer.classList.contains('open');
 
-    // Close all
     document.querySelectorAll('.faq-answer').forEach(a => {
         a.classList.remove('open');
         a.previousElementSibling.querySelector('.faq-icon').classList.remove('open');
@@ -1501,7 +1008,7 @@ document.getElementById('hubOrderForm').addEventListener('submit', function(e) {
     submitBtn.innerHTML = '⏳ Processing your order…';
     submitBtn.disabled = true;
 
-    // Google Apps Script endpoint — replace with your actual URL
+    // Google Apps Script endpoint
     const scriptURL = 'https://script.google.com/macros/s/AKfycbw3Ai_V-YfqQwsc_jxznhrYpu4J7NEaRu6rDrv1bLiUPxlkyQwhwy2cOgsUp-W-4OtVxA/exec';
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
