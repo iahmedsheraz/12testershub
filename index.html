@@ -207,6 +207,26 @@ html { scroll-behavior: smooth; }
     transition: all 0.2s;
     text-align: center;
 }
+
+/* Tabs CSS */
+.tab-btn {
+    flex: 1;
+    padding: 10px;
+    background: var(--bg3);
+    color: var(--fg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.tab-btn.active {
+    background: var(--lime);
+    color: #080c10;
+    border-color: var(--lime);
+}
+
 .mode-btn:hover { border-color: var(--lime); color: var(--lime); }
 .mode-btn.selected { background: var(--lime); color: #080c10; border-color: var(--lime); transform: scale(1.05); box-shadow: 0 8px 24px var(--lime-glow); }
 input[type=range] { -webkit-appearance: none; width: 100%; height: 6px; background: var(--bg3); border-radius: 99px; outline: none; }
@@ -301,7 +321,7 @@ input[type=range]::-moz-range-thumb { width: 20px; height: 20px; background: var
         <!-- Badge -->
         <div class="badge mb-8 reveal">
             <span>🔥</span>
-            <span style="color:#e23b2e; font-size:0.8rem;font-weight:666;">Google Play App Testing Service | 12 Real Testers for 14 Days | Fast & Reliable</span>
+            <span style="color:#e23b2e; font-size:0.9rem;font-weight:700;">Get 12 real Android testers for 14 days. The only service that Guarantees.</span>
         </div>
 		
 
@@ -640,71 +660,24 @@ input[type=range]::-moz-range-thumb { width: 20px; height: 20px; background: var
 <hr class="section-divider">
 
 <!-- ══════════════════════════════════════════
-     PRICING CALCULATOR (2-BOX LAYOUT)
+     PRICING CALCULATOR (TABS LAYOUT)
 ══════════════════════════════════════════ -->
 <section id="pricing" style="padding:60px 24px;background:var(--bg2);">
     <div class="max-w-5xl mx-auto">
         <div class="text-center mb-10 reveal">
             <div class="badge mb-3" style="background:#ff4d4d; color:#fff; border-color:#ff4d4d;">60% OFF TODAY</div>
             <h2 class="font-display font-black tracking-tight" style="font-size:clamp(1.5rem, 4vw, 2.2rem); margin-bottom: 4px;">Design Your Testing Plan</h2>
-            <p style="color:var(--fg2); font-size: 0.9rem;">Select a plan that fits your needs. 1 to 25 testers available.</p>
+            <p style="color:var(--fg2); font-size: 0.9rem;">Choose to test by Apps or by exact Testers count.</p>
         </div>
 
         <!-- 2-Column Layout -->
         <div class="grid md:grid-cols-2 gap-8 reveal">
             
-           
-
-            <!-- RIGHT BOX: PRICING LOGIC -->
-            <div class="price-card" style="padding: 32px;">
-                <h3 class="font-display font-bold text-xl mb-6" style="color:var(--fg);">Select Package Mode</h3>
-                
-                <!-- Mode Buttons -->
-<div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; justify-content:center;" id="mode-selector">
-                    <button class="mode-btn" data-mode="1">Starter (6)</button>
-                    <button class="mode-btn" data-mode="2">Ultimate (12)</button>
-                    <button class="mode-btn" data-mode="3">Foolproof (19)</button>
-                </div>
-</br>
-                <!-- Slider -->
-                <div class="mb-6 text-center">
-                    <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
-                        <span style="color:var(--fg3); font-size:0.8rem;">1 Tester</span>
-                        <span style="color:var(--lime); font-size:0.8rem; font-weight:666;"><span id="slider-tester-count">12</span> Testers</span>
-                        <span style="color:var(--fg3); font-size:0.8rem;">25 Testers</span>
-                    </div>
-                    <input type="range" min="1" max="25" value="12" id="tester-slider" class="w-full">
-                </div>
-</br>
-                <!-- Cost Breakdown -->
-                <div style="background:var(--bg3);border-radius:16px;padding:20px;font-size: 0.9rem;">
-                    <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-                        <span style="color:var(--fg2);">Base Price</span>
-                        <span style="color:var(--fg);font-weight:666;">$5.00</span>
-                    </div>
-                    <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-                        <span style="color:var(--fg2);font-weight:666;">Testers Cost ($2 x <span id="tester-count">3</span>)</span>
-                        <span style="color:var(--fg);font-weight:666;">$<span id="testers-cost">6.00</span></span>
-                    </div>
-                    <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-                        <span style="color:var(--fg2);">Discount (60% OFF)</span>
-                        <span style="color:#ff4d4d;font-weight:666;">-$<span id="discount-amount">4.00</span></span>
-                    </div>
-                    <hr style="border-color:var(--border); margin:12px 0;">
-					</br>
-                    <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <span style="color:var(--fg);font-weight:800;">Total Investment</span>
-                        <span style="color:var(--lime);font-weight:900; font-size:1.8rem; font-family:'Aclonica',sans-serif;">$<span id="total-investment">7.00</span></span>
-                    </div>
-                    <p style="color:var(--fg2);font-size:0.8rem;margin-top:12px;text-align:center;">Estimated Completion: <strong style="color:var(--fg);" id="completion-date">Mon, Aug 3</strong></p>
-                </div>
-            </div>
-			
-			 <!-- LEFT BOX: ORDER FORM -->
+            <!-- LEFT BOX: ORDER FORM -->
             <div class="price-card" style="padding: 32px;">
                 <h3 class="font-display font-bold text-xl mb-6" style="color:var(--fg);">Order Form</h3>
                 <form id="hubOrderForm">
-                    <input type="hidden" name="selected_plan" id="hidden-plan-input" value="Custom Plan (3 Testers) - $5">
+                    <input type="hidden" name="selected_plan" id="hidden-plan-input" value="1 App Plan (12 Testers) - $21">
                     <div style="margin-bottom:14px;">
                         <label style="display:block;font-size:0.8rem;font-weight:600;color:var(--fg2);margin-bottom:6px;">Full Name</label>
                         <input type="text" name="name" required class="form-input" placeholder="Your Name">
@@ -727,6 +700,64 @@ input[type=range]::-moz-range-thumb { width: 20px; height: 20px; background: var
                     </button>
                     <p style="text-align:center;font-size:0.75rem;color:var(--fg3);margin-top:12px;">Secure Payment</p>
                 </form>
+            </div>
+
+            <!-- RIGHT BOX: PRICING LOGIC -->
+            <div class="price-card" style="padding: 32px;">
+                
+                <!-- Tabs -->
+                <div style="display:flex; gap:10px; margin-bottom:20px;">
+                    <button class="tab-btn active" id="tab-apps" onclick="switchTab('apps')">By Apps</button>
+                    <button class="tab-btn" id="tab-testers" onclick="switchTab('testers')">By Testers</button>
+                </div>
+
+                <!-- APPS AREA (Default Visible) -->
+                <div id="apps-area">
+                    <p style="font-weight:600;font-size:0.9rem;color:var(--fg2);margin-bottom:12px;">Select Number of Apps (12 Testers per App):</p>
+                    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px;" id="app-selector">
+                        <button class="mode-btn selected" data-apps="1">1 App</button>
+                        <button class="mode-btn" data-apps="2">2 Apps</button>
+                        <button class="mode-btn" data-apps="3">3 Apps</button>
+                        <button class="mode-btn" data-apps="4">4 Apps</button>
+                        <button class="mode-btn" data-apps="5">5 Apps</button>
+                    </div>
+                </div>
+
+                <!-- TESTERS AREA (Hidden by Default) -->
+                <div id="testers-area" style="display:none;">
+                    <p style="font-weight:600;font-size:0.9rem;color:var(--fg2);margin-bottom:12px;">Select Package Mode:</p>
+                    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;" id="mode-selector">
+                        <button class="mode-btn" data-mode="1">Starter (6)</button>
+                        <button class="mode-btn" data-mode="2">Ultimate (12)</button>
+                        <button class="mode-btn" data-mode="3">Foolproof (19)</button>
+                    </div>
+                    <div class="mb-6 text-center">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+                            <span style="color:var(--fg3); font-size:0.8rem;">1 Tester</span>
+                            <span style="color:var(--lime); font-size:0.8rem; font-weight:700;"><span id="slider-tester-count">3</span> Testers</span>
+                            <span style="color:var(--fg3); font-size:0.8rem;">25 Testers</span>
+                        </div>
+                        <input type="range" min="1" max="25" value="3" id="tester-slider" class="w-full">
+                    </div>
+                </div>
+
+                <!-- Cost Breakdown (Common for both) -->
+                <div style="background:var(--bg3);border-radius:16px;padding:20px;font-size: 0.9rem;">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+                        <span style="color:var(--fg2);" id="item-label">App Bundle Cost</span>
+                        <span style="color:var(--fg);font-weight:700;">$<span id="item-cost">21.00</span></span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:10px;" id="discount-row">
+                        <span style="color:var(--fg2);">Discount (60% OFF)</span>
+                        <span style="color:#ff4d4d;font-weight:700;">-$<span id="discount-amount">0.00</span></span>
+                    </div>
+                    <hr style="border-color:var(--border); margin:12px 0;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="color:var(--fg);font-weight:800;">Total Investment</span>
+                        <span style="color:var(--lime);font-weight:900; font-size:1.8rem; font-family:'Aclonica',sans-serif;">$<span id="total-investment">21.00</span></span>
+                    </div>
+                    <p style="color:var(--fg2);font-size:0.8rem;margin-top:12px;text-align:center;">Estimated Completion: <strong style="color:var(--fg);" id="completion-date">Mon, Aug 3</strong></p>
+                </div>
             </div>
             
         </div>
@@ -906,44 +937,98 @@ themeBtn.addEventListener('click', () => {
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 
-// ── PRICING CALCULATOR (SLIDER + 3 MODES) ───────────────────────────────────
-// Exact price mapping from 1 to 25 testers ($2 to $38)
-const priceMap = {
-    1: 2, 2: 4, 3: 5, 4: 7, 5: 9,
-    6: 11, 7: 12, 8: 14, 9: 16, 10: 17,
-    11: 19, 12: 21, 13: 22, 14: 24, 15: 26,
-    16: 27, 17: 28, 18: 29, 19: 30, 20: 31,
-    21: 33, 22: 34, 23: 35, 24: 37, 25: 38
-};
+// ── PRICING CALCULATOR (TABS: APPS & TESTERS) ───────────────────────────────
 
-const modes = {
-    1: { name: "Starter Mode", testers: 6 },
-    2: { name: "Ultimate Mode", testers: 12 },
-    3: { name: "Foolproof Mode", testers: 19 }
-};
+// 1. Data Arrays
+// Testers price map (1 to 25 testers, $2 to $39)
+const priceMap = { 1: 2, 2: 4, 3: 5, 4: 7, 5: 9, 6: 11, 7: 12, 8: 14, 9: 16, 10: 17, 11: 19, 12: 21, 13: 22, 14: 24, 15: 26, 16: 27, 17: 28, 18: 29, 19: 30, 20: 31, 21: 33, 22: 34, 23: 35, 24: 37, 25: 39 };
 
+// Testers Mode Buttons
+const modes = { 1: { name: "Starter Mode", testers: 6 }, 2: { name: "Ultimate Mode", testers: 12 }, 3: { name: "Foolproof Mode", testers: 19 } };
+
+// Apps data: { number_of_apps: price_per_app }
+const appsData = { 1: 21, 2: 16, 3: 12, 4: 10, 5: 9 }; 
+
+// 2. DOM Elements
 const slider = document.getElementById('tester-slider');
-const modeButtons = document.querySelectorAll('.mode-btn');
+const modeButtons = document.querySelectorAll('#mode-selector .mode-btn');
+const appButtons = document.querySelectorAll('#app-selector .mode-btn');
 
+// 3. Date Calculation Logic
+function setCompletionDate() {
+    const d = new Date();
+    d.setDate(d.getDate() + 16); // Add 16 days to current date
+    document.getElementById('completion-date').textContent = d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+}
+
+// 4. Tab Switching Logic
+function switchTab(tab) {
+    if (tab === 'apps') {
+        document.getElementById('apps-area').style.display = 'block';
+        document.getElementById('testers-area').style.display = 'none';
+        document.getElementById('tab-apps').classList.add('active');
+        document.getElementById('tab-testers').classList.remove('active');
+        
+        // Reset to 1 App default selection
+        appButtons.forEach(b => b.classList.remove('selected'));
+        appButtons[0].classList.add('selected'); 
+        calculateApps(1); 
+        
+    } else {
+        document.getElementById('apps-area').style.display = 'none';
+        document.getElementById('testers-area').style.display = 'block';
+        document.getElementById('tab-apps').classList.remove('active');
+        document.getElementById('tab-testers').classList.add('active');
+        
+        // Reset to 3 Testers default selection
+        slider.value = 3;
+        calculatePrice(3); 
+    }
+}
+
+// 5. Apps Calculation Logic
+function calculateApps(appsCount) {
+    const singleAppPrice = appsData[appsCount]; // Get per app price
+    const totalCost = singleAppPrice * appsCount; // Calculate total
+    
+    document.getElementById('item-label').textContent = 'Single App Cost';
+    document.getElementById('item-cost').textContent = singleAppPrice.toFixed(2);
+    
+    // Hide discount row for Apps
+    document.getElementById('discount-row').style.display = 'none'; 
+    
+    document.getElementById('total-investment').textContent = totalCost.toFixed(2);
+    document.getElementById('hidden-plan-input').value = `${appsCount} App Plan ($${singleAppPrice}/App) - Total: $${totalCost}`;
+    setCompletionDate();
+}
+
+// App Button Click Events
+appButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        appButtons.forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        calculateApps(parseInt(btn.dataset.apps));
+    });
+});
+
+// 6. Testers Calculation Logic
 function calculatePrice(testers) {
     const targetPrice = priceMap[testers];
     const base = 5;
     const testersCost = 2 * testers;
-    const gross = base + testersCost;
-    const discount = gross - targetPrice;
+    const discount = (base + testersCost) - targetPrice;
 
-    // Update UI Elements
-    document.getElementById('tester-count').textContent = testers;
-    document.getElementById('slider-tester-count').textContent = testers;
-    document.getElementById('testers-cost').textContent = testersCost.toFixed(2);
+    // Show discount row for Testers
+    document.getElementById('discount-row').style.display = 'flex';
+    
+    document.getElementById('item-label').textContent = 'Testers Cost';
+    document.getElementById('item-cost').textContent = testersCost.toFixed(2);
     document.getElementById('discount-amount').textContent = discount.toFixed(2);
     document.getElementById('total-investment').textContent = targetPrice.toFixed(2);
+    document.getElementById('tester-count').textContent = testers;
+    document.getElementById('slider-tester-count').textContent = testers;
     
-    // Calculate Date (Today + 16 days)
-    const d = new Date();
-    d.setDate(d.getDate() + 16);
-    const formattedDate = d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
-    document.getElementById('completion-date').textContent = formattedDate;
+    setCompletionDate();
 
     // Check if testers matches a mode button
     let matchedMode = false;
@@ -957,29 +1042,27 @@ function calculatePrice(testers) {
         }
     });
 
-    // If custom slider value, update hidden input
     if (!matchedMode) {
         document.getElementById('hidden-plan-input').value = `Custom Plan (${testers} Testers) - $${targetPrice}`;
     }
 }
 
-// Mode button click events
+// Mode Button Click Events
 modeButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         const testers = modes[btn.dataset.mode].testers;
-        slider.value = testers; // Sync slider
+        slider.value = testers;
         calculatePrice(testers);
     });
 });
 
-// Slider drag event
+// Slider Drag Event
 slider.addEventListener('input', (e) => {
     calculatePrice(parseInt(e.target.value));
 });
 
-// Initialize on load
-calculatePrice(12);
-
+// Initialize on Load
+switchTab('apps'); // Default Tab
 
 
 // ── FAQ ACCORDION ─────────────────────────────────────────────────────────────
