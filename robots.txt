@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+# thank-you.html is kept out of Google with a noindex tag (do not block it here, or Google cannot see the tag)
+
 Sitemap: https://12testershub.com/sitemap.xml

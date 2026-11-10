@@ -1,0 +1,20 @@
+{
+  "name": "12 Testers Hub",
+  "short_name": "12TestersHub",
+  "description": "Google Play closed testing service: 12 real Android testers for 14 days. 1 app from $23.",
+  "id": "/",
+  "start_url": "/?utm_source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en",
+  "dir": "ltr",
+  "background_color": "#F4F7FA",
+  "theme_color": "#0B7A4B",
+  "categories": ["business", "productivity", "developer tools"],
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/maskable-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

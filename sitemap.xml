@@ -1,154 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://12testershub.com/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/google-play-12-testers-policy</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/14-days-closed-testing-rule</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/how-to-get-12-testers-android</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/production-access-rejected-reasons</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/production-access-questionnaire-answers</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/real-vs-fake-android-testers</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/setup-closed-testing-play-console</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/internal-vs-closed-testing-google-play</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/personal-vs-organization-developer-accounts</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/closed-testing-to-production-guide</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/success-stories.html</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/How-much-time-Publish-App-Google-Play</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/Google-Play-Closed-Testing-Timer-Not-Starting</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://12testershub.com/blog/How-to-Get-a-DUNS-Number-for-Google-Play</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-    <url>
-    <loc>https://12testershub.com/blog/get-12-testers-google-play-closed-testing/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://12testershub.com/blog/12-testers-14-days-complete-guide/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://12testershub.com/blog/get-google-play-testers-fast/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-    <url>
-    <loc>https://12testershub.com/blog/why-google-play-14-day-testing-clock-keeps-resetting/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://12testershub.com/blog/google-play-rejected-app-insufficient-engagement/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://12testershub.com/blog/solo-dev-12-testers-google-play-without-begging/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
+  <url><loc>https://12testershub.com/</loc><lastmod>2026-11-06</lastmod><priority>1.0</priority></url>
+  <url><loc>https://12testershub.com/success-stories.html</loc><lastmod>2026-11-06</lastmod><priority>0.8</priority></url>
+  <url><loc>https://12testershub.com/faq.html</loc><lastmod>2026-11-06</lastmod><priority>0.8</priority></url>
+  <url><loc>https://12testershub.com/about.html</loc><lastmod>2026-11-06</lastmod><priority>0.5</priority></url>
+  <url><loc>https://12testershub.com/contact.html</loc><lastmod>2026-11-06</lastmod><priority>0.5</priority></url>
+  <url><loc>https://12testershub.com/blog/</loc><lastmod>2026-11-06</lastmod><priority>0.8</priority></url>
+  <url><loc>https://12testershub.com/blog/14-days-closed-testing-rule/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/closed-testing-to-production-guide/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/how-to-get-12-testers-android/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/internal-vs-closed-testing-google-play/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/personal-vs-organization-developer-accounts/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/production-access-questionnaire-answers/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/production-access-rejected-reasons/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/real-vs-fake-android-testers/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/setup-closed-testing-play-console/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/How-much-time-Publish-App-Google-Play/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/Google-Play-Closed-Testing-Timer-Not-Starting/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/How-to-Get-a-DUNS-Number-for-Google-Play/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/get-12-testers-google-play-closed-testing/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/12-testers-14-days-complete-guide/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/get-google-play-testers-fast/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/why-google-play-14-day-testing-clock-keeps-resetting/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/google-play-rejected-app-insufficient-engagement/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/blog/solo-dev-12-testers-google-play-without-begging/</loc><lastmod>2026-11-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://12testershub.com/privacy.html</loc><lastmod>2026-11-06</lastmod><priority>0.2</priority></url>
+  <url><loc>https://12testershub.com/terms.html</loc><lastmod>2026-11-06</lastmod><priority>0.2</priority></url>
+  <url><loc>https://12testershub.com/refund-policy.html</loc><lastmod>2026-11-06</lastmod><priority>0.2</priority></url>
+  <!-- Add each new blog post URL here (or auto-generate). thank-you.html is intentionally excluded (noindex). -->
 </urlset>

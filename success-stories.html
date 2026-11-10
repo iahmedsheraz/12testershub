@@ -1,248 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-theme="light">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success Stories | Apps Launched with 12 Testers Hub</title>
-    <meta name="description" content="Read real success stories from indie developers and agencies who passed Google Play's 14-day closed testing rule using 12 Testers Hub.">
-    <meta name="keywords" content="google play success stories, 12 testers hub reviews, app launched closed testing, 14 days testing passed">
-    <link rel="canonical" href="https://12testershub.com/success-stories.html">
-    
-    <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23c8ff00'/%3E%3Cstop offset='100%25' stop-color='%23a0d000'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='24' height='24' rx='5' fill='url(%23g)'/%3E%3Cpath d='M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z' fill='%23080c10'/%3E%3C/svg%3E">
-
-    <!-- Fonts & Tailwind -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: ['class', '[data-theme="dark"]'],
-            theme: { extend: { fontFamily: { display: ['Aclonica', 'sans-serif'], body: ['"DM Sans"', 'sans-serif'] } } }
-        }
-    </script>
-
-    <style>
-        :root { --bg: #080c10; --bg2: #10161d; --bg3: #171f2a; --fg: #f7f8f4; --fg2: #9faab8; --fg3: #5a6878; --border: rgba(255,255,255,0.07); --lime: #c8ff00; --lime-soft: rgba(200,255,0,0.10); --card: #10161d; --card-border: rgba(255,255,255,0.07); }
-        [data-theme="light"] { --bg: #f7f8f4; --bg2: #eef0ea; --bg3: #e4e7de; --fg: #080c10; --fg2: #3a4452; --fg3: #6b7685; --border: rgba(0,0,0,0.08); --lime: #5a8200; --lime-soft: rgba(90,130,0,0.10); --card: #ffffff; --card-border: rgba(0,0,0,0.08); }
-        *, *::before, *::after { box-sizing: border-box; }
-        html { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--fg); overflow-x: hidden; }
-        body { background: var(--bg); color: var(--fg); transition: background 0.3s, color 0.3s; margin: 0; }
-        .font-display { font-family: 'Aclonica', sans-serif; }
-        a { text-decoration: none; }
-        
-        #navbar { background: rgba(247,248,244,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); position: fixed; width: 100%; top: 0; z-index: 50; }
-        [data-theme="dark"] #navbar { background: rgba(8,12,16,0.7); }
-        .nav-link { color: var(--fg2); font-weight: 600; font-size: 0.975rem; position: relative; transition: color 0.2s; }
-        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px; background: var(--lime); transform: scaleX(0); transition: transform 0.2s; }
-        .nav-link:hover { color: var(--fg); }
-        .nav-link:hover::after { transform: scaleX(1); }
-        .wa-pill { background: #25D366; color: #fff; border-radius: 99px; font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; gap: 6px; padding: 8px 16px; }
-        .btn-lime { background: var(--lime); color: #080c10; font-family: 'Aclonica', sans-serif; font-weight: 800; border-radius: 999px; padding: 12px 28px; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; }
-        .btn-lime:hover { transform: translateY(-3px); box-shadow: 0 16px 40px var(--lime-soft); }
-        .theme-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border); background: var(--bg2); cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--fg2); font-size: 1.1rem; }
-        #mobile-menu { display: none; background: var(--bg2); border-bottom: 1px solid var(--border); padding: 16px 20px; }
-        #mobile-menu.open { display: flex; flex-direction: column; gap: 0; }
-        #mobile-menu a { padding: 13px 0; border-bottom: 1px solid var(--border); color: var(--fg2); }
-        
-        .badge { display: inline-flex; background: var(--lime-soft); border: 1px solid var(--lime); color: var(--lime); border-radius: 99px; padding: 4px 12px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
-        .card { background: var(--card); border: 1px solid var(--card-border); border-radius: 20px; padding: 32px; transition: transform 0.2s, border-color 0.2s; }
-        .card:hover { transform: translateY(-4px); border-color: var(--lime); }
-        .stars { color: var(--lime); letter-spacing: 2px; font-size: 1.2rem; margin-bottom: 12px; }
-        footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 60px 24px 32px; }
-        footer a { color: var(--fg2); font-size: 0.875rem; transition: color 0.2s; }
-        footer a:hover { color: var(--lime); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Success Stories – Apps Launched With 12 Testers Hub</title>
+<meta name="description" content="See apps that passed Google Play closed testing with 12 Testers Hub: screenshots, launch times and developer reviews from real Android developers.">
+<meta name="author" content="12 Testers Hub">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0B7A4B">
+<link rel="canonical" href="https://12testershub.com/success-stories.html">
+<link rel="alternate" hreflang="en" href="https://12testershub.com/success-stories.html">
+<link rel="alternate" hreflang="x-default" href="https://12testershub.com/success-stories.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="12 Testers Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Success Stories – Apps Launched With 12 Testers Hub">
+<meta property="og:description" content="See apps that passed Google Play closed testing with 12 Testers Hub: screenshots, launch times and developer reviews from real Android developers.">
+<meta property="og:url" content="https://12testershub.com/success-stories.html">
+<meta property="og:image" content="https://12testershub.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="12 Testers Hub – Google Play closed testing service">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Success Stories – Apps Launched With 12 Testers Hub">
+<meta name="twitter:description" content="See apps that passed Google Play closed testing with 12 Testers Hub: screenshots, launch times and developer reviews from real Android developers.">
+<meta name="twitter:image" content="https://12testershub.com/og-image.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://12testershub.com/#org","name":"12 Testers Hub","url":"https://12testershub.com/","logo":"https://12testershub.com/favicon.png","sameAs":["https://wa.me/923392211021"]},{"@type":"WebSite","@id":"https://12testershub.com/#website","url":"https://12testershub.com/","name":"12 Testers Hub","inLanguage":"en","publisher":{"@id":"https://12testershub.com/#org"}},{"@type":"CollectionPage","@id":"https://12testershub.com/success-stories.html#webpage","url":"https://12testershub.com/success-stories.html","name":"Success Stories – Apps Launched With 12 Testers Hub","description":"See apps that passed Google Play closed testing with 12 Testers Hub: screenshots, launch times and developer reviews from real Android developers.","isPartOf":{"@id":"https://12testershub.com/#website"},"inLanguage":"en","breadcrumb":{"@id":"https://12testershub.com/success-stories.html#crumbs"},"publisher":{"@id":"https://12testershub.com/#org"}},{"@type":"BreadcrumbList","@id":"https://12testershub.com/success-stories.html#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://12testershub.com/"},{"@type":"ListItem","position":2,"name":"Success stories","item":"https://12testershub.com/success-stories.html"}]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=DM+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
-
-<!-- NAVBAR -->
-<header id="navbar">
-    <div class="max-w-7xl mx-auto px-6 h-[70px] flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3 font-display" style="color:var(--fg);text-decoration:none;"><!-- Logo: 12 Testers Icon --><span style="display:inline-flex;width:38px;height:38px;background:linear-gradient(135deg,var(--lime),#a0d000);border-radius:10px;align-items:center;justify-content:center;box-shadow:0 4px 14px var(--lime-glow);position:relative;"><!-- 12 badge --><span style="position:absolute;top:-4px;left:-4px;background:#080c10;color:var(--lime);font-size:0.4rem;font-weight:900;padding:1px 5px;border-radius:4px;border:1px solid var(--lime);">12</span><!-- People icon --><svg width="20" height="20" viewBox="0 0 24 24" fill="#080c10"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span><!-- 12TestersHub.com --><span style="font-weight:800;font-size:1.25rem;letter-spacing:0.01em;display:flex;align-items:center;gap:1px;"><span>12</span><span style="color:var(--fg2);">Testers</span><span style="color:var(--lime);text-shadow:0 0 30px var(--lime-glow);">Hub</span><span style="color:var(--fg3);font-weight:600;font-size:0.9rem;margin-left:2px;">.com</span></span></a>
-        <nav class="hidden md:flex items-center gap-6">
-            <a href="/#how-it-works" class="nav-link">How it Works</a>
-            <a href="/#pricing" class="nav-link">Pricing</a>
-            <a href="/success-stories.html" class="nav-link" style="color:var(--lime);">Success Stories</a>
-            <a href="/blog/" class="nav-link">Blog</a>
-            <a href="/about.html" class="nav-link">About</a>
-            <a href="/contact.html" class="nav-link">Contact</a>
-            <a href="/faq.html" class="nav-link">FAQ</a>
-            <a href="https://wa.me/923392211021" target="_blank" class="wa-pill">
-                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                <span>WhatsApp</span>
-            </a>
-        </nav>
-        <div class="flex items-center gap-3">
-            <button class="theme-btn" id="theme-toggle">☀️</button>
-            <a href="/#pricing" class="btn-lime hidden md:inline-flex" style="font-size:0.85rem;padding:10px 22px;">Get Testers Now →</a>
-            <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2">
-                <span class="block w-6 h-0.5" style="background:var(--fg);"></span>
-                <span class="block w-6 h-0.5" style="background:var(--fg);"></span>
-                <span class="block w-6 h-0.5" style="background:var(--fg);"></span>
-            </button>
-        </div>
-    </div>
-    <div id="mobile-menu">
-        <a href="/#how-it-works">How it Works</a>
-        <a href="/#pricing">Pricing</a>
-        <a href="/success-stories.html">Success Stories</a>
-        <a href="/about.html">About Us</a>
-        <a href="/contact.html">Contact Us</a>
-        <a href="/faq.html">FAQ</a>
-        <a href="/blog/">Blog</a>
-    </div>
-</header>
-
-<!-- MAIN CONTENT -->
-<main class="pt-32 pb-20 px-6">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-            <div class="badge mb-4">SUCCESS STORIES</div>
-            <h1 class="font-display font-black tracking-tight text-4xl md:text-5xl mb-4">Apps Now Live on the Play Store.</h1>
-            <p style="color:var(--fg2); max-width: 600px; margin: 0 auto;">Real developers. Real apps. Real results — verified and published. See how 12 Testers Hub helped these apps bypass the 14-day rule.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Story 1 -->
-            <div class="card">
-                <div class="stars">★★★★★</div>
-                <p style="color:var(--fg2); font-size:0.95rem; margin-bottom:24px;">"I was stuck for a month trying to find testers on Reddit. These guys filled my track in 2 days. App is live now. Wish I had found them week one."</p>
-                <div style="display:flex; align-items:center; gap:12px; border-top: 1px solid var(--border); padding-top:20px;">
-                    <div style="width:48px; height:48px; background:var(--lime); border-radius:12px; display:flex; align-items:center; justify-content:center; font-family:'Aclonica'; font-weight:900; color:#080c10; font-size:1.2rem;">FT</div>
-                    <div>
-                        <div style="font-weight:700; color:var(--fg);">FitTrack Pro</div>
-                        <div style="color:var(--fg3); font-size:0.8rem;">Health & Fitness — Launched in 16 days</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Story 2 -->
-            <div class="card">
-                <div class="stars">★★★★★</div>
-                <p style="color:var(--fg2); font-size:0.95rem; margin-bottom:24px;">"Worth every penny. Saved us from trying fake accounts and getting banned. The team was super helpful throughout the 14 days."</p>
-                <div style="display:flex; align-items:center; gap:12px; border-top: 1px solid var(--border); padding-top:20px;">
-                    <div style="width:48px; height:48px; background:var(--lime); border-radius:12px; display:flex; align-items:center; justify-content:center; font-family:'Aclonica'; font-weight:900; color:#080c10; font-size:1.2rem;">PQ</div>
-                    <div>
-                        <div style="font-weight:700; color:var(--fg);">PuzzleQuest Arena</div>
-                        <div style="color:var(--fg3); font-size:0.8rem;">Mobile Gaming — Launched in 15 days</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Story 3 -->
-            <div class="card">
-                <div class="stars">★★★★★</div>
-                <p style="color:var(--fg2); font-size:0.95rem; margin-bottom:24px;">"Setup took 2 minutes. Ordered, shared the link, went to sleep — woke up to 12 active testers in my console. Zero rejections."</p>
-                <div style="display:flex; align-items:center; gap:12px; border-top: 1px solid var(--border); padding-top:20px;">
-                    <div style="width:48px; height:48px; background:var(--lime); border-radius:12px; display:flex; align-items:center; justify-content:center; font-family:'Aclonica'; font-weight:900; color:#080c10; font-size:1.2rem;">BW</div>
-                    <div>
-                        <div style="font-weight:700; color:var(--fg);">BudgetWise</div>
-                        <div style="color:var(--fg3); font-size:0.8rem;">Finance — Launched in 14 days</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Story 4 -->
-            <div class="card">
-                <div class="stars">★★★★★</div>
-                <p style="color:var(--fg2); font-size:0.95rem; margin-bottom:24px;">"We ran 5 apps through them. Every single one passed. The volume discount is real — by app 3, we were saving 40%. This is our permanent testing partner now."</p>
-                <div style="display:flex; align-items:center; gap:12px; border-top: 1px solid var(--border); padding-top:20px;">
-                    <div style="width:48px; height:48px; background:var(--lime); border-radius:12px; display:flex; align-items:center; justify-content:center; font-family:'Aclonica'; font-weight:900; color:#080c10; font-size:1.2rem;">SB</div>
-                    <div>
-                        <div style="font-weight:700; color:var(--fg);">StudyBuddy</div>
-                        <div style="color:var(--fg3); font-size:0.8rem;">Education — Launched in 16 days</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Story 5 -->
-            <div class="card">
-                <div class="stars">★★★★★</div>
-                <p style="color:var(--fg2); font-size:0.95rem; margin-bottom:24px;">"Had a Fiverr seller drop out on day 10 twice. Never again. 12 Testers Hub actually guarantees the full 14 days and means it. Absolute lifesaver."</p>
-                <div style="display:flex; align-items:center; gap:12px; border-top: 1px solid var(--border); padding-top:20px;">
-                    <div style="width:48px; height:48px; background:var(--lime); border-radius:12px; display:flex; align-items:center; justify-content:center; font-family:'Aclonica'; font-weight:900; color:#080c10; font-size:1.2rem;">TG</div>
-                    <div>
-                        <div style="font-weight:700; color:var(--fg);">TaskGenie</div>
-                        <div style="color:var(--fg3); font-size:0.8rem;">Productivity — Launched in 15 days</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Story 6 -->
-            <div class="card">
-                <div class="stars">★★★★★</div>
-                <p style="color:var(--fg2); font-size:0.95rem; margin-bottom:24px;">"Their questionnaire guide was the cherry on top. We got approved on our first try after 14 days. I recommend them to every developer I meet."</p>
-                <div style="display:flex; align-items:center; gap:12px; border-top: 1px solid var(--border); padding-top:20px;">
-                    <div style="width:48px; height:48px; background:var(--lime); border-radius:12px; display:flex; align-items:center; justify-content:center; font-family:'Aclonica'; font-weight:900; color:#080c10; font-size:1.2rem;">MN</div>
-                    <div>
-                        <div style="font-weight:700; color:var(--fg);">MoodNotes</div>
-                        <div style="color:var(--fg3); font-size:0.8rem;">Lifestyle — Launched in 14 days</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="text-center mt-16">
-            <h2 class="font-display text-2xl md:text-3xl mb-6" style="color:var(--fg);">Ready to write your success story?</h2>
-            <a href="/#pricing" class="btn-lime">Start Your 14-Day Test Today →</a>
-        </div>
-    </div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="ppl" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></symbol>
+<symbol id="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+</defs></svg>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top" id="navbar"><div class="w"><a href="/" class="logo" aria-label="12 Testers Hub home"><i><svg width="24" height="24" fill="currentColor" aria-hidden="true"><use href="#ppl"/></svg></i><span>12Testers<small>Hub.com</small></span></a><nav class="main" aria-label="Main"><a href="/#how-it-works">How it works</a><a href="/#pricing">Pricing</a><a href="/success-stories.html" aria-current=page>Success stories</a><a href="/faq.html">FAQ</a><a href="/blog/">Blog</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav>
+<div class="ctl"><button class="ico" id="theme-toggle" type="button" aria-label="Toggle dark mode">☀️</button><a href="/#pricing" class="btn" style="padding:10px 18px;font-size:.9rem">Get testers</a><button class="ico" id="hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">☰</button></div></div>
+<nav id="mobile-menu" aria-label="Mobile" hidden><a href="/#how-it-works">How it works</a><a href="/#pricing">Pricing</a><a href="/success-stories.html" aria-current=page>Success stories</a><a href="/faq.html">FAQ</a><a href="/blog/">Blog</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav></header>
+<main id="main">
+<div class="page"><div class="w"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">Success stories</span></nav><div class="pghead c"><span class="badge">Success stories</span><h1>Apps now live on the Google Play Store</h1><p class="lead">Real developers, real apps, published after a 14-day closed test. See how 12 Testers Hub helped these apps clear the 12-tester rule.</p></div>
+<!-- Auto slider: reads images from /success-stories/images/ (files starting with hero- or banner- are preferred) -->
+<div class="slider proof" id="hero-slider" aria-roledescription="carousel" aria-label="Featured apps launched with 12 Testers Hub" hidden><div class="strack" id="slider-track" tabindex="0"></div><button class="sbtn p" id="sl-prev" type="button" aria-label="Previous slide">‹</button><button class="sbtn n" id="sl-next" type="button" aria-label="Next slide">›</button></div>
+<h2 class="sr" style="position:absolute;left:-999px">Developer reviews</h2>
+<div class="grid3"><article class="pcard story"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“I was stuck for a month trying to find testers on Reddit. These guys filled my track in 2 days. App is live now. Wish I had found them week one.”</blockquote><div class="who"><i aria-hidden="true">FT</i><div><strong>FitTrack Pro</strong><small>Health & Fitness — Launched in 16 days</small></div></div></article><article class="pcard story"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Worth every penny. Saved us from trying fake accounts and getting banned. The team was super helpful throughout the 14 days.”</blockquote><div class="who"><i aria-hidden="true">PQ</i><div><strong>PuzzleQuest Arena</strong><small>Mobile Gaming — Launched in 15 days</small></div></div></article><article class="pcard story"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Setup took 2 minutes. Ordered, shared the link, went to sleep — woke up to 12 active testers in my console. Zero rejections.”</blockquote><div class="who"><i aria-hidden="true">BW</i><div><strong>BudgetWise</strong><small>Finance — Launched in 14 days</small></div></div></article><article class="pcard story"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“We ran 5 apps through them. Every single one passed. The volume discount is real — by app 3, we were saving 40%. This is our permanent testing partner now.”</blockquote><div class="who"><i aria-hidden="true">SB</i><div><strong>StudyBuddy</strong><small>Education — Launched in 16 days</small></div></div></article><article class="pcard story"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Had a Fiverr seller drop out on day 10 twice. Never again. 12 Testers Hub actually guarantees the full 14 days and means it. Absolute lifesaver.”</blockquote><div class="who"><i aria-hidden="true">TG</i><div><strong>TaskGenie</strong><small>Productivity — Launched in 15 days</small></div></div></article><article class="pcard story"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Their questionnaire guide was the cherry on top. We got approved on our first try after 14 days. I recommend them to every developer I meet.”</blockquote><div class="who"><i aria-hidden="true">MN</i><div><strong>MoodNotes</strong><small>Lifestyle — Launched in 14 days</small></div></div></article></div>
+<section class="proof" hidden aria-labelledby="gal" style="margin-top:56px"><h2 id="gal">Screenshots from apps we have tested</h2><p class="lead" style="margin-bottom:24px">A look inside the apps that went through closed testing with us. Tap any image to enlarge.</p><div class="gallery" id="gallery"></div></section></div></div><section class="band"><div class="w"><h2>Ready to write your success story?</h2><p>Start your 14-day closed test today and apply for production access on day 15.</p><div class="cta"><a href="/#pricing" class="btn">Start your 14-day test →</a></div></div></section>
 </main>
-
-<!-- FOOTER -->
-<footer>
-    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10 mb-12">
-        <div>
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
-                <a href="/" class="flex items-center gap-3 font-display" style="color:var(--fg);text-decoration:none;"><!-- Logo: 12 Testers Icon --><span style="display:inline-flex;width:32px;height:32px;background:linear-gradient(135deg,var(--lime),#a0d000);border-radius:10px;align-items:center;justify-content:center;box-shadow:0 4px 14px var(--lime-glow);position:relative;"><!-- 12 badge --><span style="position:absolute;top:-4px;left:-4px;background:#080c10;color:var(--lime);font-size:0.4rem;font-weight:700;padding:1px 5px;border-radius:4px;border:1px solid var(--lime);">12</span><!-- People icon --><svg width="20" height="20" viewBox="0 0 24 24" fill="#080c10"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span><!-- 12TestersHub.com --><span style="font-weight:800;font-size:1.1rem;letter-spacing:0.01em;display:flex;align-items:center;gap:1px;"><span>12</span><span style="color:var(--fg2);">Testers</span><span style="color:var(--lime);text-shadow:0 0 30px var(--lime-glow);">Hub</span><span style="color:var(--fg3);font-weight:600;font-size:0.8rem;margin-left:2px;">.com</span></span></a>
-            </div>
-            <p style="color:var(--fg2);font-size:0.875rem;margin-bottom:16px;">The only Google Play closed testing service with a guaranteed 14-day retention policy.</p>
-        </div>
-        <div>
-            <h4 class="font-display" style="font-weight:800;font-size:0.9rem;margin-bottom:14px;text-transform:uppercase;">Company</h4>
-            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-                <li><a href="/about.html">About Us</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/faq.html">FAQ</a></li>
-                <li><a href="/success-stories.html">Success Stories</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="font-display" style="font-weight:800;font-size:0.9rem;margin-bottom:14px;text-transform:uppercase;">Legal</h4>
-            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-                <li><a href="/privacy.html">Privacy Policy</a></li>
-                <li><a href="/terms.html">Terms of Service</a></li>
-                <li><a href="/refund-policy.html">Refund Policy</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="font-display" style="font-weight:800;font-size:0.9rem;margin-bottom:14px;text-transform:uppercase;">Resources</h4>
-            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-                <li><a href="/blog/production-access-questionnaire-answers/">Questionnaire Guide</a></li>
-                <li><a href="/#pricing">Pricing Calculator</a></li>
-            </ul>
-        </div>
-    </div>
-    <div style="border-top:1px solid var(--border);padding-top:24px;text-align:center;color:var(--fg3);font-size:0.8rem;">© 2024 12 Testers Hub. All rights reserved.</div>
-</footer>
-
-<script>
-    const themeBtn = document.getElementById('theme-toggle');
-    const html = document.documentElement;
-    let isDark = false;
-    if (localStorage.getItem('theme') === 'dark') { isDark = true; html.setAttribute('data-theme','dark'); themeBtn.textContent = '🌙'; }
-    themeBtn.addEventListener('click', () => {
-        isDark = !isDark;
-        html.setAttribute('data-theme', isDark ? 'dark' : 'light');
-        themeBtn.textContent = isDark ? '🌙' : '☀️';
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
-</script>
+<footer class="foot"><div class="w"><div class="fg">
+<div><a href="/" class="logo" style="margin-bottom:12px" aria-label="12 Testers Hub home"><i><svg width="24" height="24" fill="currentColor" aria-hidden="true"><use href="#ppl"/></svg></i><span>12Testers<small>Hub.com</small></span></a><p style="color:var(--m)">Google Play closed testing with a 14-day retention guarantee.</p><a href="https://wa.me/923392211021" target="_blank" rel="noopener" style="display:inline-flex;gap:8px;align-items:center;color:var(--t);font-weight:600"><svg width="20" height="20" fill="#25D366" aria-hidden="true"><use href="#wa"/></svg>Chat on WhatsApp</a></div>
+<div><h2>Quick links</h2><ul><li><a href="/#how-it-works">How it works</a></li><li><a href="/#pricing">Pricing</a></li><li><a href="/success-stories.html">Success stories</a></li><li><a href="/about.html">About us</a></li><li><a href="/contact.html">Contact us</a></li><li><a href="/faq.html">FAQ</a></li></ul></div>
+<div><h2>Legal</h2><ul><li><a href="/privacy.html">Privacy policy</a></li><li><a href="/terms.html">Terms of service</a></li><li><a href="/refund-policy.html">Refund policy</a></li></ul></div>
+<div><h2>Resources</h2><ul><li><a href="/blog/">All guides</a></li><li><a href="/blog/production-access-questionnaire-answers/">Questionnaire answers guide</a></li><li><a href="/blog/14-days-closed-testing-rule/">12 testers 14 days rule</a></li><li><a href="/blog/internal-vs-closed-testing-google-play/">Internal vs closed testing</a></li><li><a href="/blog/real-vs-fake-android-testers/">Real vs fake testers</a></li></ul></div></div>
+<div class="fb"><div>© 2026 <a href="https://12testershub.com" target="_self">12TestersHub.com</a> All rights reserved.</div><div>Built &amp; Designed by <a href="https://metaworcs.com" target="_blank">metaworcs.com</a></div></div></div></footer>
+<a href="https://wa.me/923392211021" target="_blank" rel="noopener" class="wafab" aria-label="Chat on WhatsApp"><svg width="28" height="28" fill="#fff" aria-hidden="true"><use href="#wa"/></svg></a>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
