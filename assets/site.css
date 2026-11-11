@@ -1,4 +1,4 @@
-/* 12 Testers 14 Days Google– shared theme (same design system as the homepage) */
+/* 12 Testers Hub – shared theme (same design system as the homepage) */
 :root{--bg:#F4F7FA;--s:#fff;--l:#DDE4EC;--t:#10202E;--m:#55667A;--pri:#0B7A4B;--on:#fff;--lime:#C8FF00;--r:12px}
 [data-theme=dark]{--bg:#0C1620;--s:#13212E;--l:#25384A;--t:#EAF1F7;--m:#9FB2C4;--pri:#C8FF00;--on:#0C1620}
 *,*::before,*::after{box-sizing:border-box}
