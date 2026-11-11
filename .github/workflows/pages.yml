@@ -1,0 +1,33 @@
+# Deploys the site to GitHub Pages on every push and auto-generates:
+#   blog/posts.json, success-stories/images/images.json, sitemap.xml
+# One-time setup: repo Settings -> Pages -> Build and deployment -> Source = "GitHub Actions"
+name: Deploy site to GitHub Pages
+on:
+  push:
+    branches: [main]        # change to master if your branch is called master
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Generate manifests and sitemap
+        run: python3 .github/generate.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
