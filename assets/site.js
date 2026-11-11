@@ -1,4 +1,4 @@
-/* 12 Testers Hub – shared scripts (theme, menu, auto blog list, auto gallery + slider) */
+/* 12 Testers 14 Days Google– shared scripts (theme, menu, auto blog list, auto gallery + slider) */
 const CFG={github:'iahmedsheraz/12testershub',branch:'main'}; // optional fallback only: the GitHub Action manifests are used first. Change branch to 'master' if your default branch is master
 (()=>{
 const $=s=>document.querySelector(s),root=document.documentElement,esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
